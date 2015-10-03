@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Volleyball Rotations</title>
+    <script src="js/snap.svg-min.js"></script>
+    <script src="js/vb_rotations.js"></script>
+    <script type="text/javascript">
+      var svgMaker;
+
+      function clean(elem) {
+        while (elem.firstChild) {
+            elem.removeChild(elem.firstChild);
+        }
+      }
+
+      function handleError(msg) {
+        alert(msg);
+      }
+
+      function go() {
+        var svgDiv = document.getElementById('diagram');
+        clean(svgDiv);
+        svgMaker = new monkeysppp.vb_rotations.SVGMaker();
+        svgMaker.setErrorHandler(handleError);
+        var options;
+        var svgRoot = svgMaker.createSVG(options);
+        svgDiv.appendChild(svgRoot);
+        svgMaker.draw();
+      }
+
+      function move() {
+        svgMaker.move();
+      }
+
+      window.onload = function () {
+        go();
+      }
+    </script>
+  </head>
+  <body>
+    <div id="diagram"></div>
+  </body>
+</html>
