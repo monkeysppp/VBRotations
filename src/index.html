@@ -3,7 +3,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Volleyball Rotations</title>
     <script src="js/snap.svg-min.js"></script>
-    <script src="js/vb_rotations.js"></script>
+    <script src="js/vbRotations.js"></script>
     <script type="text/javascript">
       var svgMaker;
 
@@ -20,7 +20,7 @@
       function go() {
         var svgDiv = document.getElementById('diagram');
         clean(svgDiv);
-        svgMaker = new monkeysppp.vb_rotations.SVGMaker();
+        svgMaker = new monkeysppp.vbRotations.SVGMaker();
         svgMaker.setErrorHandler(handleError);
         var options;
         var svgRoot = svgMaker.createSVG(options);
