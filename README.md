@@ -12,3 +12,6 @@ Interactive SVG for Volleyball playbooks, built using Snap.
 - Attack/Cover and defense plays
 - Should the "action" be sticky when switching rotations?
 - Keyboard shortcuts?  Can javascript catch them?
+
+# License
+This project is released under the Apache 2.0 license.  The full License can be found in the License.md file.
