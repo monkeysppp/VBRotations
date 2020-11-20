@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Volleyball Rotations</title>
+    <script src="src/js/snap.svg-min.js"></script>
+    <script src="src/js/vbRotations.js"></script>
+    <script type="text/javascript">
+      function clean(elem) {
+        while (elem.firstChild) {
+            elem.removeChild(elem.firstChild)
+        }
+      }
+
+      window.onload = function () {
+        const courtDiv = document.getElementById('court');
+        const rotations = new monkeysppp.vbRotations()
+        clean(courtDiv)
+        courtDiv.appendChild(rotations.createSVG())
+        rotations.draw()
+      }
+    </script>
+  </head>
+  <body>
+    <div id="court"></div>
+  </body>
+</html>
