@@ -1,5 +1,6 @@
 # VBRotations
-Interactive SVG for Volleyball playbooks, built using Snap.
+
+Interactive SVG for Volleyball playbooks, built using [Snap](http://snapsvg.io).
 
 [Demo](/Rotations.html)
 
@@ -14,4 +15,4 @@ Interactive SVG for Volleyball playbooks, built using Snap.
 - Keyboard shortcuts?  Can javascript catch them?
 
 # License
-This project is released under the Apache 2.0 license.  The full License can be found in the License.md file.
+This project is released under the Apache 2.0 license.  The full License can be found in the LICENSE.md file.

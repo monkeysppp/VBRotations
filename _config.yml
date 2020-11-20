@@ -4,7 +4,6 @@ relative_links:
   enabled: true
   collections: true
 include:
-  - README.md
-  - LICENSE
+  - Index.md
 
 remote_theme: pmarsceill/just-the-docs
