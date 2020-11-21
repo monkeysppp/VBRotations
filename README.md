@@ -55,11 +55,9 @@ You can configure the SVG by passing a config object to the `monkeysppp.vbRotati
   svg: {
     width: 900 // A number setting the width in pixels.
                // The height will always be 8/9ths the width.
-  }
+  }       // Defaults to en
 }
 ```
-
-[Demo](/Rotations.html)
 
 ## TODO
 
