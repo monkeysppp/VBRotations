@@ -6,18 +6,26 @@
     <script src="src/js/snap.svg-min.js"></script>
     <script src="src/js/vbRotations.js"></script>
     <script type="text/javascript">
+      let vbRotationsDiv
+
       function clean(elem) {
         while (elem.firstChild) {
             elem.removeChild(elem.firstChild)
         }
       }
 
-      window.onload = function () {
-        const courtDiv = document.getElementById('court');
-        const rotations = new monkeysppp.vbRotations()
-        clean(courtDiv)
-        courtDiv.appendChild(rotations.createSVG())
-        rotations.draw()
+      function createVBRotations(lang) {
+        clean(vbRotationsDiv)
+        const vbRotations = new monkeysppp.vbRotations({
+          language: lang
+        })
+        vbRotationsDiv.appendChild(vbRotations.createSVG())
+        vbRotations.draw()
+      }
+
+      window.onload = () => {
+        vbRotationsDiv = document.getElementById('vbRotationsDiv')
+        createVBRotations('en')
       }
     </script>
   </head>
@@ -26,7 +34,16 @@
       <h1>5-1 Volleyball Rotation System</h1>
     </header>
     <section class="vbrotations">
-      <div class="container" id="court"></div>
+      <div class="container" id="vbRotationsDiv"></div>
+      <div class="container" style="text-align: right;">
+        <img width="30px" src="img/UK.png" style="cursor: pointer;" title="English" onClick="createVBRotations('en')"/>
+        <img width="30px" src="img/France.png" style="cursor: pointer;" title="Française - coming soon" onClick="createVBRotations('fr')"/>
+        <img width="30px" src="img/Germany.png" style="cursor: pointer;" title="Deutsche - coming soon" onClick="createVBRotations('de')"/>
+        <img width="30px" src="img/Italy.png" style="cursor: pointer;" title="Italiano" onClick="createVBRotations('it')"/>
+        <img width="30px" src="img/Netherlands.png" style="cursor: pointer;" title="Dutch - coming soon" onClick="createVBRotations('nl')"/>
+        <img width="30px" src="img/Poland.png" style="cursor: pointer;" title="Polski - coming soon" onClick="createVBRotations('pl')"/>
+        <img width="30px" src="img/Spain.png" style="cursor: pointer;" title="Español - coming soon" onClick="createVBRotations('es')"/>
+      </div>
     </section>
     <section class="notes">
       <div class="container">
@@ -34,7 +51,8 @@
       </div>
     </section>
     <footer class="footer">
-      <p>Created using <a href="https://github.com/monkeysppp/VBRotations">VBRotations</a></p>
+      <p>Created using <a href="https://github.com/monkeysppp/VBRotations" target="_blank">VBRotations</a></p>
+      <p>Flag icons from <a href="https://www.iconfinder.com/iconsets/195-flat-flag-psd-icons" target="_blank">iconfinder</a> under <a href="https://creativecommons.org/licenses/by/3.0/ target="_blank"">Creative Commons</a></p>
     </footer>
   </body>
 </html>

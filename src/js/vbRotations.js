@@ -69,22 +69,106 @@ const vbRotations = function (options = {}) {
       ]
     },
     'it': {
-      
+      players: { s: 'P', o: 'O', m1: 'C1', m2: 'C2', h1: 'S1', h2: 'S2'},
+      rotationControl: { serving: 'Servizio', receiving: 'Ricezione', s1: 'P1', s2: 'P2', s3: 'P3', s4: 'P4', s5: 'P5', s6: 'P6' },
+      actionControl: { base: 'Base', serve: 'Servizio', set: 'Alzata', switch: 'Cambio', pass: 'Ricezione', attack: 'Attacco' },
+      tutorial: [
+        'Avanti',
+        'Questo è un giocatore.\nSi seleziona con un clic.\nS=Schiacciatore, C=Centrale,\n P=Palleggiatore, O=Opposto',
+        'Questo è in campo con tutti e\n 6 i giocatori.\nAl clic sui bottoni, i giocatori\n si muoveranno intorno al campo',
+        'Questo ti permette di scegliere\nla formazione di partenza.\nIl clic sul cerchio cambia la rotazione.\nOgni rotazione è etichettata con la\nposizione dell\'alzatore (P)',
+        'Questo mostra la situazione in cui\nla squadra è al servizio',
+        'Questo mostra la situazione in cui\nla squadra è in ricezione',
+        'Spostandosi da un cerchio ad un\nsi simulano le rotazioni come\ndurante una gara',
+        'Da qui si selezionano le situazioni\n di gioco.\nI giocatori si muoveranno nel campo\ndi conseguenza',
+        'Qui si hanno le posizioni dei\n giocatori quando la squadra\n è al servizio',
+        'Qui si hanno le posizioni dei\n giocatori quando la squadra\n è in ricezione',
+      ]
     },
     'fr': {
-
+      players: { s: 'S', o: 'O', m1: 'M1', m2: 'M2', h1: 'H1', h2: 'H2'},
+      rotationControl: { serving: 'Serving', receiving: 'Receiving', s1: 'Setter at 1', s2: 'Setter at 2', s3: 'Setter at 3', s4: 'Setter at 4', s5: 'Setter at 5', s6: 'Setter at 6' },
+      actionControl: { base: 'Base', serve: 'Serve', set: 'Set', switch: 'Switch', pass: 'Pass', attack: 'Attack' },
+      tutorial: [
+        'Next',
+        'This is a player. Click to highlight it.\n\nH=Hitter, M=Middle, S=Setter, \nO=Opposite',
+        'This is the court, with all 6 players.\nAs you click the buttons, the players\n will move round the court',
+        'This lets you select the rotations.\nClick the circle to change rotation.\nEach one is labelled with the\nsetter\'s position',
+        'These are for when you are serving',
+        'These are for when you are\nreceiving',
+        'Moving from circle to circle makes\n you rotate like in a match',
+        'This lets you select the phase of\n the rally.  The players will then\nmove around the court',
+        'These show the player positions\n when your side is serving',
+        'These show the player positions\n when your side is receiving',
+      ]
     },
     'pl': {
-
+      players: { s: 'S', o: 'O', m1: 'M1', m2: 'M2', h1: 'H1', h2: 'H2'},
+      rotationControl: { serving: 'Serving', receiving: 'Receiving', s1: 'Setter at 1', s2: 'Setter at 2', s3: 'Setter at 3', s4: 'Setter at 4', s5: 'Setter at 5', s6: 'Setter at 6' },
+      actionControl: { base: 'Base', serve: 'Serve', set: 'Set', switch: 'Switch', pass: 'Pass', attack: 'Attack' },
+      tutorial: [
+        'Next',
+        'This is a player. Click to highlight it.\n\nH=Hitter, M=Middle, S=Setter, \nO=Opposite',
+        'This is the court, with all 6 players.\nAs you click the buttons, the players\n will move round the court',
+        'This lets you select the rotations.\nClick the circle to change rotation.\nEach one is labelled with the\nsetter\'s position',
+        'These are for when you are serving',
+        'These are for when you are\nreceiving',
+        'Moving from circle to circle makes\n you rotate like in a match',
+        'This lets you select the phase of\n the rally.  The players will then\nmove around the court',
+        'These show the player positions\n when your side is serving',
+        'These show the player positions\n when your side is receiving',
+      ]
     },
     'nl': {
-
+      players: { s: 'S', o: 'O', m1: 'M1', m2: 'M2', h1: 'H1', h2: 'H2'},
+      rotationControl: { serving: 'Serving', receiving: 'Receiving', s1: 'Setter at 1', s2: 'Setter at 2', s3: 'Setter at 3', s4: 'Setter at 4', s5: 'Setter at 5', s6: 'Setter at 6' },
+      actionControl: { base: 'Base', serve: 'Serve', set: 'Set', switch: 'Switch', pass: 'Pass', attack: 'Attack' },
+      tutorial: [
+        'Next',
+        'This is a player. Click to highlight it.\n\nH=Hitter, M=Middle, S=Setter, \nO=Opposite',
+        'This is the court, with all 6 players.\nAs you click the buttons, the players\n will move round the court',
+        'This lets you select the rotations.\nClick the circle to change rotation.\nEach one is labelled with the\nsetter\'s position',
+        'These are for when you are serving',
+        'These are for when you are\nreceiving',
+        'Moving from circle to circle makes\n you rotate like in a match',
+        'This lets you select the phase of\n the rally.  The players will then\nmove around the court',
+        'These show the player positions\n when your side is serving',
+        'These show the player positions\n when your side is receiving',
+      ]
     },
     'de': {
-
+      players: { s: 'S', o: 'O', m1: 'M1', m2: 'M2', h1: 'H1', h2: 'H2'},
+      rotationControl: { serving: 'Serving', receiving: 'Receiving', s1: 'Setter at 1', s2: 'Setter at 2', s3: 'Setter at 3', s4: 'Setter at 4', s5: 'Setter at 5', s6: 'Setter at 6' },
+      actionControl: { base: 'Base', serve: 'Serve', set: 'Set', switch: 'Switch', pass: 'Pass', attack: 'Attack' },
+      tutorial: [
+        'Next',
+        'This is a player. Click to highlight it.\n\nH=Hitter, M=Middle, S=Setter, \nO=Opposite',
+        'This is the court, with all 6 players.\nAs you click the buttons, the players\n will move round the court',
+        'This lets you select the rotations.\nClick the circle to change rotation.\nEach one is labelled with the\nsetter\'s position',
+        'These are for when you are serving',
+        'These are for when you are\nreceiving',
+        'Moving from circle to circle makes\n you rotate like in a match',
+        'This lets you select the phase of\n the rally.  The players will then\nmove around the court',
+        'These show the player positions\n when your side is serving',
+        'These show the player positions\n when your side is receiving',
+      ]
     },
     'es': {
-
+      players: { s: 'Co', o: 'O', m1: 'C1', m2: 'C2', h1: 'A1', h2: 'A2'},
+      rotationControl: { serving: 'Servicio', receiving: 'Recepción', s1: 'Colocadora en 1', s2: 'Colocadora\n en 2', s3: 'Colocadora en 3', s4: 'Colocadora en 4', s5: 'Colocadora en 5', s6: 'Colocadora en 6' },
+      actionControl: { base: 'Base', serve: 'Servicio', set: 'Set', switch: 'Cambiar', pass: 'Pass', attack: 'Ataque' },
+      tutorial: [
+        'Next',
+        'This is a player. Click to highlight it.\n\nA=Atacante, C#=Central,\nCo=Colocadora,O=Opuesta',
+        'This is the court, with all 6 players.\nAs you click the buttons, the players\n will move round the court',
+        'This lets you select the rotations.\nClick the circle to change rotation.\nEach one is labelled with the\nsetter\'s position',
+        'These are for when you are serving',
+        'These are for when you are\nreceiving',
+        'Moving from circle to circle makes\n you rotate like in a match',
+        'This lets you select the phase of\n the rally.  The players will then\nmove around the court',
+        'These show the player positions\n when your side is serving',
+        'These show the player positions\n when your side is receiving',
+      ]
     }
   }
 
@@ -1554,12 +1638,13 @@ const vbRotations = function (options = {}) {
   }
 
   this.createSVG = function () {
-    this.state.moving = false
-    const svgRoot = document.createElementNS(this.svg.NS, 'svg')
-    svgRoot.setAttribute('width', this.svg.width)
-    svgRoot.setAttribute('height', this.svg.height)
-    svgRoot.setAttribute('id', 'vbsvg')
-    return svgRoot
+    if (!this.svg.svgRoot) {
+      this.svg.svgRoot = document.createElementNS(this.svg.NS, 'svg')
+      this.svg.svgRoot.setAttribute('width', this.svg.width)
+      this.svg.svgRoot.setAttribute('height', this.svg.height)
+      this.svg.svgRoot.setAttribute('id', 'vbsvg')
+    }
+    return this.svg.svgRoot
   }
 }
 
