@@ -59,7 +59,7 @@ const vbRotations = function (options = {}) {
         'Next',
         'This is a player. Click to highlight it.\n\nH=Hitter, M=Middle, S=Setter, \nO=Opposite',
         'This is the court, with all 6 players.\nAs you click the buttons, the players\n will move round the court',
-        'This lets you select the rotations.\nClick the circle to change rotation.\nEach one is labelled with the\nsetter\'s position',
+        'This lets you select the rotations.\nClick the circle to change rotation.\nEach one is labeled with the\nsetter\'s position',
         'These are for when you are serving',
         'These are for when you are\nreceiving',
         'Moving from circle to circle makes\n you rotate like in a match',
@@ -86,12 +86,12 @@ const vbRotations = function (options = {}) {
       ]
     },
     'fr': {
-      players: { s: 'S', o: 'O', m1: 'M1', m2: 'M2', h1: 'H1', h2: 'H2'},
-      rotationControl: { serving: 'Serving', receiving: 'Receiving', s1: 'Setter at 1', s2: 'Setter at 2', s3: 'Setter at 3', s4: 'Setter at 4', s5: 'Setter at 5', s6: 'Setter at 6' },
-      actionControl: { base: 'Base', serve: 'Serve', set: 'Set', switch: 'Switch', pass: 'Pass', attack: 'Attack' },
+      players: { s: 'Pa', o: 'Po', m1: 'C1', m2: 'C2', h1: 'A1', h2: 'A2'},
+      rotationControl: { serving: 'Service', receiving: 'Récevoir', s1: 'Passeur a 1', s2: 'Passeur a 2', s3: 'Passeur a 3', s4: 'Passeur a 4', s5: 'Passeur a 5', s6: 'Passeur a 6' },
+      actionControl: { base: 'Base', serve: 'Service', set: 'Passe', switch: 'Switch', pass: 'Récevoir', attack: 'Attaque' },
       tutorial: [
         'Next',
-        'This is a player. Click to highlight it.\n\nH=Hitter, M=Middle, S=Setter, \nO=Opposite',
+        'This is a player. Click to highlight it.\n\nA=Attaquant, C=Central,\nPa=Passeur, Po=Pointu',
         'This is the court, with all 6 players.\nAs you click the buttons, the players\n will move round the court',
         'This lets you select the rotations.\nClick the circle to change rotation.\nEach one is labelled with the\nsetter\'s position',
         'These are for when you are serving',

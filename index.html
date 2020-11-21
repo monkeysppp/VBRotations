@@ -15,6 +15,11 @@
       }
 
       function createVBRotations(lang) {
+        if (lang === 'en') {
+          window.history.replaceState(null, '', 'index.html')
+        } else {
+          window.history.replaceState(null, '', 'index.html?lang=' + lang)
+        }
         clean(vbRotationsDiv)
         const vbRotations = new monkeysppp.vbRotations({
           language: lang
@@ -25,7 +30,10 @@
 
       window.onload = () => {
         vbRotationsDiv = document.getElementById('vbRotationsDiv')
-        createVBRotations('en')
+        const queryString = window.location.search
+        const urlParams = new URLSearchParams(queryString)
+        const lang = urlParams.has('lang') ? urlParams.get('lang') : 'en'
+        createVBRotations(lang)
       }
     </script>
   </head>
