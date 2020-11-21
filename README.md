@@ -55,9 +55,7 @@ You can configure the SVG by passing a config object to the `monkeysppp.vbRotati
   svg: {
     width: 900 // A number setting the width in pixels.
                // The height will always be 8/9ths the width.
-  },
-  language: en // A string with one of the values en|de|es|fr|it|nl|pl
-               // Defaults to en
+  }
 }
 ```
 
@@ -65,19 +63,14 @@ You can configure the SVG by passing a config object to the `monkeysppp.vbRotati
 
 ## TODO
 
-- Languages
+- Languages in the SVG itself
 - Instructions
-- Player positions overrides from options
 - Libero back court
+- Players
+- Player positions overrides from options
 - Mobile version
 - Add a toggle or hover that visualizes the rotation requirements - i.e. what a player has to worry about and which players they have to take notice of to stay in a valid rotation.
 - Attack/Cover and defence plays
-
-## Thanks
-
-Thanks to the following for their help with the translations:
-
-- [Maurizio Napolitano](https://github.com/napo) (Italian)
 
 ## License
 

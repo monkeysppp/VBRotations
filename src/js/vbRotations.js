@@ -69,21 +69,7 @@ const vbRotations = function (options = {}) {
       ]
     },
     'it': {
-      players: { s: 'P', o: 'O', m1: 'C1', m2: 'C2', h1: 'S1', h2: 'S2'},
-      rotationControl: { serving: 'Servizio', receiving: 'Ricezione', s1: 'P1', s2: 'P2', s3: 'P3', s4: 'P4', s5: 'P5', s6: 'P6' },
-      actionControl: { base: 'Base', serve: 'Servizio', set: 'Alzata', switch: 'Cambio', pass: 'Ricezione', attack: 'Attacco' },
-      tutorial: [
-        'Avanti',
-        'Questo è un giocatore.\nSi seleziona con un clic.\nS=Schiacciatore, C=Centrale,\n P=Palleggiatore, O=Opposto',
-        'Questo è in campo con tutti e\n 6 i giocatori.\nAl clic sui bottoni, i giocatori\n si muoveranno intorno al campo',
-        'Questo ti permette di scegliere\nla formazione di partenza.\nIl clic sul cerchio cambia la rotazione.\nOgni rotazione è etichettata con la\nposizione dell\'alzatore (P)',
-        'Questo mostra la situazione in cui\nla squadra è al servizio',
-        'Questo mostra la situazione in cui\nla squadra è in ricezione',
-        'Spostandosi da un cerchio ad un\nsi simulano le rotazioni come\ndurante una gara',
-        'Da qui si selezionano le situazioni\n di gioco.\nI giocatori si muoveranno nel campo\ndi conseguenza',
-        'Qui si hanno le posizioni dei\n giocatori quando la squadra\n è al servizio',
-        'Qui si hanno le posizioni dei\n giocatori quando la squadra\n è in ricezione',
-      ]
+      
     },
     'fr': {
 
