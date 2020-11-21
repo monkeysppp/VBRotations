@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  background: #eeeeee;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  font-size: 22px;
+  background: #4596bf;
+  color: #f0f0f0;
+}
+
+.site-header {
+  background: #4596bf;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #235c79;
+  text-align: center;
+  font-size: 20px;
+}
+
+section.vbrotations
+{
+  min-height: 200px;
+  background: #85d6ff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+section.notes {
+  background: #4596bf;
+  border-top: 1px solid #235c79;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: auto;
+}
+
+div.container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer.footer {
+  background: #235c79;
+  color: #4596bf;
+  padding: 15px;
+  margin-top: 60px;
+  text-align: right;
+  font-size: 18px;
+  vertical-align: middle;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
