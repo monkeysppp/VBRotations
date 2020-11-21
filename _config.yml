@@ -4,6 +4,6 @@ relative_links:
   enabled: true
   collections: true
 include:
-  - Rotations.html
+  - index.html
 
 theme: jekyll-theme-architect
