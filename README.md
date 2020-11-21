@@ -1,15 +1,14 @@
 # VBRotations
 
-VBRotations is an interactive SVG for teaching Volleyball positional play, built using [Snap](http://snapsvg.io).  It's primary use is as an aid for teaching a typical 5-1 rotation
-system, but you could extend it for any positional demonstrations you wish.
+VBRotations is an interactive SVG for teaching Volleyball positional play, built using [Snap](http://snapsvg.io).
+
+It's primary use is as an aid for teaching a typical 5-1 rotation system, but you could extend it for any positional demonstrations you wish.
 
 You can see VBRotations in action in [here](https://monkeysppp.github.io/VBRotations)
 
-# Using it yourself
+## Using it yourself
 
-## Embedding
-
-To use VBRotations:
+You can take a copy of the source and embed it into your own site:
 
 1. Copy the Javascript files from the src directory and pull into your page using `<script>` tags.
 2. Create a new `monkeysppp.vbRotations` Object
@@ -54,16 +53,17 @@ You can configure the SVG by passing a config object to the `monkeysppp.vbRotati
 ```
 {
   svg: {
-    width: 'A number setting the width in pixels.  The height will always be 8/9ths the width'
+    width: 900 // A number setting the width in pixels.
+               // The height will always be 8/9ths the width.
   },
-  language: 'A string with one of the values en(default)|de|es|fr|it|nl|pl'
+  language: en // A string with one of the values en|de|es|fr|it|nl|pl
+               // Defaults to en
 }
 ```
 
-
 [Demo](/Rotations.html)
 
-# TODO
+## TODO
 
 - Languages
 - Instructions
@@ -72,6 +72,12 @@ You can configure the SVG by passing a config object to the `monkeysppp.vbRotati
 - Add a toggle or hover that visualizes the rotation requirements - i.e. what a player has to worry about and which players they have to take notice of to stay in a valid rotation.
 - Attack/Cover and defence plays
 
-# License
+## Thanks
 
-This project is released under the Apache 2.0 license.  The full License can be found in the LICENSE.md file.
+Thanks to the following for their help with the translations:
+
+- [Maurizio Napolitano](https://github.com/napo) (Italian)
+
+## License
+
+This project is released under the [Apache 2.0 license](./LICENSE.md).
