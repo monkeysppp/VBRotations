@@ -4,6 +4,6 @@ relative_links:
   enabled: true
   collections: true
 include:
-  - Index.md
+  - Rotations.html
 
-remote_theme: pmarsceill/just-the-docs
+theme: jekyll-theme-architect
