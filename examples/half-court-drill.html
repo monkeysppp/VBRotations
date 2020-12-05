@@ -1,0 +1,142 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Half Court Drill</title>
+    <link href="../style.css" rel="stylesheet" type="text/css">
+    <script src="../src/js/snap.svg-min.js"></script>
+    <script src="../src/js/vbCourts.js"></script>
+    <script type="text/javascript">
+      let vbCourtDiv
+      let running = false
+      let movingPromise = Promise.resolve()
+      let stepCount = 0
+      const parts = {}
+      const steps = [
+        async () => {
+          // drop
+          parts.playerS.setPosition(720, 300)
+          await parts.vbCourt.draw(500)
+        },
+        async () => {
+          // attack
+          parts.ball.setPosition(680, 290)
+          await parts.vbCourt.draw(800)
+        },
+        async () => {
+          // pass
+          parts.ball.setPosition(400, 400)
+          parts.playerS.setPosition(650, 100)
+          await parts.vbCourt.draw(800)
+        },
+        async () => {
+          // transition
+          parts.ball.setPosition(620, 100)
+          await parts.vbCourt.draw(800)
+        },
+        async () => {
+          // set
+          parts.ball.setPosition(150, 100)
+          await parts.vbCourt.draw(1000)
+        },
+        async () => {
+          // return
+          parts.playerS.setPosition(750, 50)
+          await parts.vbCourt.draw(500)
+        },
+        async () => {
+          // block
+          parts.playerS.setPosition(750, 50)
+          await parts.vbCourt.draw(500)
+        }
+      ]
+
+      function clean(elem) {
+        while (elem.firstChild) {
+            elem.removeChild(elem.firstChild)
+        }
+      }
+
+      async function animateDrill () {
+        if (running) {
+          running = false
+          movingPromise.then(() => {
+            document.getElementById('drillButton').innerHTML = 'Play'
+          })
+        } else {
+          document.getElementById('drillButton').innerHTML = 'Pause'
+          running = true
+
+          while (running) {
+            let r
+            movingPromise = new Promise((resolve, reject) => {r = resolve})
+            await nextStep()
+            r()
+            if (!running) break
+          }
+        }
+      }
+
+      async function nextStep () {
+        if (stepCount >= steps.length) {
+          stepCount = 0
+        }
+        return steps[stepCount++]()
+      }
+
+      async function reset () {
+        running = false
+        movingPromise.then(() => {
+          parts.playerS.setPosition(750, 50)
+          parts.ball.setPosition(150, 100)
+          document.getElementById('drillButton').innerHTML = 'Play'
+          stepCount = 0
+          return parts.vbCourt.draw(0)
+        })
+      }
+
+      window.onload = () => {
+        vbCourtDiv = document.getElementById('vbCourtDiv')
+        clean(vbCourtDiv)
+        parts.vbCourt = new VBHalfCourt({
+          width: 550
+        })
+        vbCourtDiv.appendChild(parts.vbCourt.getSVG())
+        parts.ballBlock = parts.vbCourt.addBall(750, -20)
+        parts.ball = parts.vbCourt.addBall(150, 100)
+        parts.playerF = parts.vbCourt.addPlayer(100, 100, 'F')
+        parts.playerL = parts.vbCourt.addPlayer(400, 450, 'L')
+        parts.playerS = parts.vbCourt.addPlayer(750, 50, 'S')
+        parts.vbCourt.draw()
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Half Court Drill</h1>
+    </header>
+    <section class="vbrotations">
+      <div class="container">
+        <div id="vbCourtDiv" style="width: 550px; display: inline-block"></div>
+        <div style="margin-top: 40px; max-width: 340px; display: inline-block; vertical-align: top">
+          <p>Drill: Front-court chain drill</p>
+          <ul>
+            <li>S starts at 2 and block-touches a ball over the net</li>
+            <li>S moves back to defend a cross court attack</li>
+            <li>S passes the attack ball to the centre for the libero</li>
+            <li>L passes to 2, S moves in and sets to 4 (maybe even covering)</li>
+            <li>S resets to blocking position</li>
+            <li>Repeat until exhausted</li>
+          </ul>
+          <p><span id="drillButton" onclick="animateDrill()" style="cursor: pointer; padding: 3px 7px 3px 7px; background: #7ec485;">Play</span> - <span id="drillButton" onclick="reset()" style="cursor: pointer; padding: 3px 7px 3px 7px; background: #7ec485;">Reset</span></p>
+        </div>
+      </div>
+    </section>
+    <section class="notes">
+      <div class="container">
+      </div>
+    </section>
+    <footer class="footer">
+      <p>Created using <a href="https://github.com/monkeysppp/VBRotations" target="_blank">VBRotations</a><br /></a></p>
+    </footer>
+  </body>
+</html>

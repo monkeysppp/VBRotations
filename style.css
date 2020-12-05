@@ -1,17 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  box-sizing: inherit;
-}
-
 html {
   height: 100%;
   background: #eeeeee;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
+  margin: 0;
+  padding: 0;
   position: relative;
   min-height: 100%;
   font-size: 22px;
@@ -32,17 +28,17 @@ body {
 
 section.vbrotations
 {
-  min-height: 200px;
-  background: #85d6ff;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background: #63b6e0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #ffffff;
 }
 
 section.notes {
   background: #4596bf;
   border-top: 1px solid #235c79;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 120px;
   margin-bottom: auto;
 }
 
@@ -50,6 +46,8 @@ div.container {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 footer.footer {
@@ -67,21 +65,21 @@ footer.footer {
 }
 
 a:link {
-  text-decoration: none;
   color: inherit;
 }
 
 a:visited {
-  text-decoration: none;
   color: inherit;
 }
 
 a:hover {
-  text-decoration: none;
   color: inherit;
 }
 
 a:active {
-  text-decoration: none;
   color: inherit;
+}
+
+li {
+  margin-left: 1.12em;
 }

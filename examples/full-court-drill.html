@@ -1,0 +1,144 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Full Court Drill</title>
+    <link href="../style.css" rel="stylesheet" type="text/css">
+    <script src="../src/js/snap.svg-min.js"></script>
+    <script src="../src/js/vbCourts.js"></script>
+    <script type="text/javascript">
+      let vbCourtDiv
+      let running = false
+      let movingPromise = Promise.resolve()
+      let stepCount = 0
+      const parts = {}
+      const steps = [
+        async () => {
+          // feed
+          parts.ball.setPosition(200, 450)
+          parts.playerS.setPosition(300, 100)
+          parts.player2.setPosition(200, -500)
+          await parts.vbCourt.draw(1000)
+        },
+        async () => {
+          // pass
+          parts.ball.setPosition(250, 100)
+          parts.player1.setPosition(50, 300)
+          await parts.vbCourt.draw(750)
+        },
+        async () => {
+          // set
+          parts.ball.setPosition(75, 75)
+          parts.player1.setPosition(75, 100)
+          await parts.vbCourt.draw(750)
+        },
+        async () => {
+          // hit
+          parts.ball.setPosition(200, -450)
+          parts.player1.setPosition(200, 500)
+          parts.playerS.setPosition(100, -100)
+          await parts.vbCourt.draw(1000)
+        },
+        async () => {
+          // pass
+          parts.ball.setPosition(150, -100)
+          parts.player2.setPosition(250, -300)
+          await parts.vbCourt.draw(750)
+        },
+        async () => {
+          // set
+          parts.ball.setPosition(325, -75)
+          parts.player2.setPosition(325, -100)
+          await parts.vbCourt.draw(750)
+        }
+      ]
+
+      function clean (elem) {
+        while (elem.firstChild) {
+            elem.removeChild(elem.firstChild)
+        }
+      }
+
+      async function animateDrill () {
+        if (running) {
+          running = false
+          movingPromise.then(() => {
+            document.getElementById('drillButton').innerHTML = 'Play'
+          })
+        } else {
+          document.getElementById('drillButton').innerHTML = 'Pause'
+          running = true
+
+          while (running) {
+            let r
+            movingPromise = new Promise((resolve, reject) => {r = resolve})
+            await nextStep()
+            r()
+            if (!running) break
+          }
+        }
+      }
+
+      async function nextStep () {
+        console.log (`stepping at ${stepCount}`)
+        if (stepCount >= steps.length) {
+          stepCount = 0
+        }
+        return steps[stepCount++]()
+      }
+
+      async function reset () {
+        running = false
+        movingPromise.then(() => {
+          parts.player1.setPosition(200, 500)
+          parts.player2.setPosition(325, -100)
+          parts.playerS.setPosition(300, 100)
+          parts.ball.setPosition(325, -50)
+          document.getElementById('drillButton').innerHTML = 'Play'
+          stepCount = 0
+          return parts.vbCourt.draw(0)
+        })
+      }
+
+      window.onload = () => {
+        vbCourtDiv = document.getElementById('vbCourtDiv')
+        clean(vbCourtDiv)
+        parts.vbCourt = new VBFullCourt({
+          width: 400
+        })
+        vbCourtDiv.appendChild(parts.vbCourt.getSVG())
+        parts.ball = parts.vbCourt.addBall(325, -50)
+        parts.player1 = parts.vbCourt.addPlayer(200, 500, 'P', 1)
+        parts.player2 = parts.vbCourt.addPlayer(325, -100, 'P', 2)
+        parts.playerS = parts.vbCourt.addPlayer(300, 100, 'S', 2)
+        parts.vbCourt.draw()
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Full Court Drill</h1>
+    </header>
+    <section class="vbrotations">
+      <div class="container">
+        <div id="vbCourtDiv" style="width: 400px; display: inline-block"></div>
+        <div style="margin-left: 20px; margin-top: 40px; max-width: 470px; display: inline-block; vertical-align: top">
+          <p>Drill: 1 v 1 plus setter</p>
+          <ul>
+            <li>Start with a player each side of the net and the setter on one side</li>
+            <li>The drill starts from a free-ball feed, and the players play standard 3-touch rally</li>
+            <li>Once the setter has set the attacker, they have to run under the net to becode the setter for the other player</li>
+            <li>Players should focus on continuation of the drill; it's about control</li>
+          </ul>
+          <p><span id="drillButton" onclick="animateDrill()" style="cursor: pointer; padding: 3px 7px 3px 7px; background: #7ec485;">Play</span> - <span id="drillButton" onclick="reset()" style="cursor: pointer; padding: 3px 7px 3px 7px; background: #7ec485;">Reset</span></p>
+        </div>
+      </div>
+    </section>
+    <section class="notes">
+      <div class="container">
+      </div>
+    </section>
+    <footer class="footer">
+      <p>Created using <a href="https://github.com/monkeysppp/VBRotations" target="_blank">VBRotations</a><br /></a></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<svg width="300" height="545.4545454545454">
+  <rect x="0" y="0" width="300" height="545.4545454545454" style="" fill="#63b6e0"></rect>
+  <rect x="27.27272727272727" y="27.27272727272727" width="245.45454545454544" height="490.9090909090909" style="stroke-width: 2.18182px;" fill="#ffb591" stroke="#ffffff"></rect>
+  <line x1="8.181818181818182" x2="291.8181818181818" y1="272.7272727272727" y2="272.7272727272727" style="stroke-width: 2.18182px;" stroke="#ffffff"></line>
+  <line x1="27.27272727272727" x2="272.7272727272727" y1="190.9090909090909" y2="190.9090909090909" style="stroke-width: 2.18182px;" stroke="#ffffff"></line>
+  <line x1="27.27272727272727" x2="272.7272727272727" y1="354.5454545454545" y2="354.5454545454545" style="stroke-width: 2.18182px;" stroke="#ffffff"></line>
+  <line x1="5.454545454545454" x2="27.27272727272727" y1="190.9090909090909" y2="190.9090909090909" style="stroke-width: 2.18182px; stroke-dasharray: 4.36364px, 4.36364px;" stroke="#ffffff"></line>
+  <line x1="5.454545454545454" x2="27.27272727272727" y1="354.5454545454545" y2="354.5454545454545" style="stroke-width: 2.18182px; stroke-dasharray: 4.36364px, 4.36364px;" stroke="#ffffff"></line>
+  <line x1="272.7272727272727" x2="321.8181818181818" y1="190.9090909090909" y2="190.9090909090909" style="stroke-width: 2.18182px; stroke-dasharray: 4.90909px, 4.90909px;" stroke="#ffffff"></line>
+  <line x1="272.7272727272727" x2="321.8181818181818" y1="354.5454545454545" y2="354.5454545454545" style="stroke-width: 2.18182px; stroke-dasharray: 4.90909px, 4.90909px;" stroke="#ffffff"></line>
+  <circle cx="28" cy="272" r="4" style="stroke-width: 2.5px;" stroke="#ffffff" fill="#ffffff"></circle>
+  <text x="30" y="267" style="stroke-width: 0.8px; text-anchor: left; dominant-baseline: bottom; font-family: Verdana; font-size: 18px;" fill="#ffffff" stroke="#ffffff">(0,0)</text>
+  <circle cx="273" cy="272" r="4" style="stroke-width: 2.5px;" stroke="#ffffff" fill="#ffffff"></circle>
+  <text x="200" y="267" style="stroke-width: 0.8px; text-anchor: left; dominant-baseline: bottom; font-family: Verdana; font-size: 18px;" fill="#ffffff" stroke="#ffffff">(900,0)</text>
+  <circle cx="28" cy="28" r="4" style="stroke-width: 2.5px;" stroke="#ffffff" fill="#ffffff"></circle>
+  <text x="30" y="48" style="stroke-width: 0.8px; text-anchor: left; dominant-baseline: bottom; font-family: Verdana; font-size: 18px;" fill="#ffffff" stroke="#ffffff">(0,-900)</text>
+  <circle cx="273" cy="28" r="4" style="stroke-width: 2.5px;" stroke="#ffffff" fill="#ffffff"></circle>
+  <text x="170" y="48" style="stroke-width: 0.8px; text-anchor: left; dominant-baseline: bottom; font-family: Verdana; font-size: 18px;" fill="#ffffff" stroke="#ffffff">(900,-900)</text>
+  <circle cx="28" cy="518" r="4" style="stroke-width: 2.5px;" stroke="#ffffff" fill="#ffffff"></circle>
+  <text x="30" y="510" style="stroke-width: 0.8px; text-anchor: left; dominant-baseline: bottom; font-family: Verdana; font-size: 18px;" fill="#ffffff" stroke="#ffffff">(0,900)</text>
+  <circle cx="273" cy="518" r="4" style="stroke-width: 2.5px;" stroke="#ffffff" fill="#ffffff"></circle>
+  <text x="178" y="510" style="stroke-width: 0.8px; text-anchor: left; dominant-baseline: bottom; font-family: Verdana; font-size: 18px;" fill="#ffffff" stroke="#ffffff">(900,900)</text>
+  <polygon points="100 273 90 280 90 266 100 273" stroke="#ffffff" fill="#ffffff" stroke-width="1px"/>
+  <text x="90" y="297" style="stroke-width: 0.8px; text-anchor: left; dominant-baseline: bottom; font-family: Verdana; font-size: 18px;" fill="#ffffff" stroke="#ffffff">x</text>
+  <polygon points="27 344 20 334 34 334 27 344" stroke="#ffffff" fill="#ffffff" stroke-width="1px"/>
+  <text x="40" y="345" style="stroke-width: 0.8px; text-anchor: left; dominant-baseline: bottom; font-family: Verdana; font-size: 18px;" fill="#ffffff" stroke="#ffffff">y</text>
+</svg>

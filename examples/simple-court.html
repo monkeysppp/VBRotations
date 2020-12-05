@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Volleyball Rotations</title>
+    <!-- Pull in the source files -->
+    <script src="../src/js/snap.svg-min.js"></script>
+    <script src="../src/js/vbCourts.js"></script>
+    <script type="text/javascript">
+      // Clean up the div element to make sure our SVG will be the only child
+      function clean(elem) {
+        while (elem.firstChild) {
+            elem.removeChild(elem.firstChild)
+        }
+      }
+
+      window.onload = function () {
+        const courtDiv = document.getElementById('court'); // find the div element
+        const vbCout = new VBHalfCourt({ // create the VBCourt object
+          width: 550
+        })
+        clean(courtDiv)
+        courtDiv.appendChild(vbCout.getSVG()) // get the SVG and attach to our dev element
+        const p4 = vbCout.addPlayer(200, 100, '4') // add some players to the court
+        const p3 = vbCout.addPlayer(450, 100, '3')
+        const p2 = vbCout.addPlayer(700, 100, '2')
+        const p5 = vbCout.addPlayer(200, 500, '5')
+        const p6 = vbCout.addPlayer(450, 700, '6')
+        const p1 = vbCout.addPlayer(700, 500, '1')
+        vbCout.draw() // draw the court and the players
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Create a div element to attach the SVG onto -->
+    <div id="court"></div>
+  </body>
+</html>

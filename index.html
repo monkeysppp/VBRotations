@@ -1,66 +1,43 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Volleyball 5-1 Rotation system</title>
+    <title>VBRotations</title>
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script src="src/js/snap.svg-min.js"></script>
-    <script src="src/js/vbRotations.js"></script>
-    <script type="text/javascript">
-      let vbRotationsDiv
-
-      function clean(elem) {
-        while (elem.firstChild) {
-            elem.removeChild(elem.firstChild)
-        }
-      }
-
-      function createVBRotations(lang) {
-        if (lang === 'en') {
-          window.history.replaceState(null, '', 'index.html')
-        } else {
-          window.history.replaceState(null, '', 'index.html?lang=' + lang)
-        }
-        clean(vbRotationsDiv)
-        const vbRotations = new monkeysppp.vbRotations({
-          language: lang
-        })
-        vbRotationsDiv.appendChild(vbRotations.createSVG())
-        vbRotations.draw()
-      }
-
-      window.onload = () => {
-        vbRotationsDiv = document.getElementById('vbRotationsDiv')
-        const queryString = window.location.search
-        const urlParams = new URLSearchParams(queryString)
-        const lang = urlParams.has('lang') ? urlParams.get('lang') : 'en'
-        createVBRotations(lang)
-      }
-    </script>
   </head>
   <body>
     <header class="site-header">
-      <h1>5-1 Volleyball Rotation System</h1>
+      <h1>VBRotations</h1>
     </header>
     <section class="vbrotations">
-      <div class="container" id="vbRotationsDiv"></div>
-      <div class="container" style="text-align: right;">
-        <img width="30px" src="img/UK.png" style="cursor: pointer;" title="English" onClick="createVBRotations('en')"/>
-        <img width="30px" src="img/France.png" style="cursor: pointer;" title="Française - coming soon" onClick="createVBRotations('fr')"/>
-        <img width="30px" src="img/Germany.png" style="cursor: pointer;" title="Deutsche - coming soon" onClick="createVBRotations('de')"/>
-        <img width="30px" src="img/Italy.png" style="cursor: pointer;" title="Italiano" onClick="createVBRotations('it')"/>
-        <img width="30px" src="img/Netherlands.png" style="cursor: pointer;" title="Dutch - coming soon" onClick="createVBRotations('nl')"/>
-        <img width="30px" src="img/Poland.png" style="cursor: pointer;" title="Polski - coming soon" onClick="createVBRotations('pl')"/>
-        <img width="30px" src="img/Spain.png" style="cursor: pointer;" title="Español - coming soon" onClick="createVBRotations('es')"/>
+      <div class="container">
+        <p>VBRotations is a Javascript based toolkit for creating interactive, animated diagrams of volleyball drills and situations.
+        These can be used as teaching aids for players, drill descriptions for coaches, playbooks for teams etc.</p>
+        <p>Below are some examples of things you can do with VBRotations:</p>
       </div>
     </section>
     <section class="notes">
       <div class="container">
-        <p>The interactive diagram above can be used to demonstrate a typical 5-1 volleyball rotation system.  You can run the tutorial to show how the diagram works.</p>
+        <div style="width: 295px; display: inline-block; margin: auto">
+          <a href="examples/half-court-drill.html" target="_blank"><img src="img/half-court-drill.png" width="295px"/></a>
+          <br />
+          <p>A half court diagram of a simple drill</p>
+        </div>
+        <div style="width: 295px; display: inline-block; margin: auto">
+          <a href="examples/full-court-drill.html" target="_blank"><img src="img/full-court-drill.png" width="295px"/></a>
+          <br />
+          <p>A full court diagram of a defence scenario</p>
+        </div>
+        <div style="width: 295px; display: inline-block; margin: auto">
+          <a href="examples/5-1-rotation-system.html" target="_blank"><img src="img/5-1-rotation-tutorial.png" width="295px"/></a>
+          <br />
+          <p>A tutorial for a 5-1 rotation system</p>
+        </div>
+        <p>Documentation on how to use VBRotations is available <a href="https://github.com/monkeysppp/VBRotations">here</a>.</p>
+      </div>
       </div>
     </section>
     <footer class="footer">
-      <p>Created using <a href="https://github.com/monkeysppp/VBRotations" target="_blank">VBRotations</a></p>
-      <p>Flag icons from <a href="https://www.iconfinder.com/iconsets/195-flat-flag-psd-icons" target="_blank">iconfinder</a> under <a href="https://creativecommons.org/licenses/by/3.0/ target="_blank"">Creative Commons</a></p>
+      <p>&nbsp;</p>
     </footer>
   </body>
 </html>

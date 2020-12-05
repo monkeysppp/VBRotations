@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Volleyball 5-1 Rotation system</title>
+    <link href="../style.css" rel="stylesheet" type="text/css">
+    <script src="../src/js/snap.svg-min.js"></script>
+    <script src="../src/js/vbCourts.js"></script>
+    <script src="../src/js/vbTutorials.js"></script>
+    <script type="text/javascript">
+      let vbTutorialDiv
+      let langDivs
+
+      function clean(elem) {
+        while (elem.firstChild) {
+            elem.removeChild(elem.firstChild)
+        }
+      }
+
+      function createVBTutorial(lang) {
+        if (lang === 'en') {
+          window.history.replaceState(null, '', '5-1-rotation-system.html')
+        } else {
+          window.history.replaceState(null, '', '5-1-rotation-system.html?lang=' + lang)
+        }
+        clean(vbTutorialDiv)
+        const vbTutorial = new VBTutorialServeReceieve({
+          language: lang,
+          width: 800
+        })
+        vbTutorialDiv.appendChild(vbTutorial.getSVG())
+        vbTutorial.draw()
+      }
+
+      function pickLang(lang) {
+        Object.keys(langDivs).forEach(langKey => {
+          langDivs[langKey].style.borderBottom = 'none'
+        })
+        langDivs[lang].style.borderBottom = '2px solid #ffffff'
+        createVBTutorial(lang)
+      }
+
+      window.onload = () => {
+        vbTutorialDiv = document.getElementById('vbTutorialDiv')
+        const queryString = window.location.search
+        const urlParams = new URLSearchParams(queryString)
+        const lang = urlParams.has('lang') ? urlParams.get('lang') : 'en'
+        langDivs = {
+          en: document.getElementById('lang-en'),
+          fr: document.getElementById('lang-fr'),
+          de: document.getElementById('lang-de'),
+          it: document.getElementById('lang-it'),
+          nl: document.getElementById('lang-nl'),
+          pl: document.getElementById('lang-pl'),
+          es: document.getElementById('lang-es')
+        }
+        Object.keys(langDivs).forEach(langKey => {
+          langDivs[langKey].style.borderBottom = 'none'
+          langDivs[langKey].style.paddingBottom = '3px'
+          langDivs[langKey].style.marginBottom = '1px'
+          langDivs[langKey].style.display = 'inline-block'
+        })
+        pickLang(lang)
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>5-1 Volleyball Rotation System</h1>
+    </header>
+    <section class="vbrotations">
+      <div class="container" id="vbTutorialDiv"></div>
+      <div class="container" style="text-align: right;">
+        <div id="lang-en"><img width="26px" src="../img/UK.png" style="cursor: pointer;" title="English" onClick="pickLang('en')"/></div>
+        <div id="lang-fr"><img width="26px" src="../img/France.png" style="cursor: pointer;" title="Française - coming soon" onClick="pickLang('fr')"/></div>
+        <div id="lang-de"><img width="26px" src="../img/Germany.png" style="cursor: pointer;" title="Deutsche - coming soon" onClick="pickLang('de')"/></div>
+        <div id="lang-it"><img width="26px" src="../img/Italy.png" style="cursor: pointer;" title="Italiano" onClick="pickLang('it')"/></div>
+        <div id="lang-nl"><img width="26px" src="../img/Netherlands.png" style="cursor: pointer;" title="Dutch - coming soon" onClick="pickLang('nl')"/></div>
+        <div id="lang-pl"><img width="26px" src="../img/Poland.png" style="cursor: pointer;" title="Polski - coming soon" onClick="pickLang('pl')"/></div>
+        <div id="lang-es"><img width="26px" src="../img/Spain.png" style="cursor: pointer;" title="Español - coming soon" onClick="pickLang('es')"/></div>
+      </div>
+    </section>
+    <section class="notes">
+      <div class="container">
+        <p>The interactive diagram above can be used to demonstrate a typical 5-1 volleyball rotation system.  You can run the tutorial to show how the diagram works.</p>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>Created using <a href="https://github.com/monkeysppp/VBRotations" target="_blank">VBRotations</a><br />
+        Flag icons from <a href="https://www.iconfinder.com/iconsets/195-flat-flag-psd-icons" target="_blank">iconfinder</a> under <a href="https://creativecommons.org/licenses/by/3.0/ target="_blank"">Creative Commons</a></p>
+    </footer>
+  </body>
+</html>
