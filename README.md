@@ -325,6 +325,7 @@ Populates the SVG with all of the tutorial objects.  This only needs to be calle
 
 ## TODO
 
+- Update the 5-1 rotation with better default
 - Libero back court in the tutorials (allow a player label to change? simulate a substitution with players off court?)
 - Player positions overrides from options
 - Mobile version
