@@ -67,6 +67,7 @@ class VBTutorialServeReceieve extends VBTutorial {
         rotationControl: { serving: 'Serving', receiving: 'Receiving', s1: 'Setter at 1', s2: 'Setter at 2', s3: 'Setter at 3', s4: 'Setter at 4', s5: 'Setter at 5', s6: 'Setter at 6' },
         actionControl: { base: 'Base', serve: 'Serve', set: 'Set', switch: 'Switch', pass: 'Pass', attack: 'Attack' },
         tutorial: [
+          'Tutorial',
           'Next',
           'This is a player. Click to highlight it.\n\nH=Hitter, M=Middle, S=Setter, \nO=Opposite',
           'This is the court, with all 6 players.\nAs you click the buttons, the players\n will move round the court',
@@ -84,6 +85,7 @@ class VBTutorialServeReceieve extends VBTutorial {
         rotationControl: { serving: 'Servizio', receiving: 'Ricezione', s1: 'P1', s2: 'P2', s3: 'P3', s4: 'P4', s5: 'P5', s6: 'P6' },
         actionControl: { base: 'Base', serve: 'Servizio', set: 'Alzata', switch: 'Cambio', pass: 'Ricezione', attack: 'Attacco' },
         tutorial: [
+          'Tutorial',
           'Avanti',
           'Questo è un giocatore.\nSi seleziona con un clic.\nS=Schiacciatore, C=Centrale,\n P=Palleggiatore, O=Opposto',
           'Questo è in campo con tutti e\n 6 i giocatori.\nAl clic sui bottoni, i giocatori\n si muoveranno intorno al campo',
@@ -101,6 +103,7 @@ class VBTutorialServeReceieve extends VBTutorial {
         rotationControl: { serving: 'Service', receiving: 'Récevoir', s1: 'Passeur a 1', s2: 'Passeur a 2', s3: 'Passeur a 3', s4: 'Passeur a 4', s5: 'Passeur a 5', s6: 'Passeur a 6' },
         actionControl: { base: 'Base', serve: 'Service', set: 'Passe', switch: 'Switch', pass: 'Récevoir', attack: 'Attaque' },
         tutorial: [
+          'Tutorial',
           'Next',
           'This is a player. Click to highlight it.\n\nA=Attaquant, C=Central,\nPa=Passeur, Po=Pointu',
           'This is the court, with all 6 players.\nAs you click the buttons, the players\n will move round the court',
@@ -114,20 +117,21 @@ class VBTutorialServeReceieve extends VBTutorial {
         ]
       },
       'pl': {
-        players: { s: 'S', o: 'O', m1: 'M1', m2: 'M2', h1: 'H1', h2: 'H2'},
-        rotationControl: { serving: 'Serving', receiving: 'Receiving', s1: 'Setter at 1', s2: 'Setter at 2', s3: 'Setter at 3', s4: 'Setter at 4', s5: 'Setter at 5', s6: 'Setter at 6' },
-        actionControl: { base: 'Base', serve: 'Serve', set: 'Set', switch: 'Switch', pass: 'Pass', attack: 'Attack' },
+        players: { s: 'R', o: 'A', m1: 'S1', m2: 'S2', h1: 'P1', h2: 'P2'},
+        rotationControl: { serving: 'Serwis', receiving: 'Przyjęcie', s1: 'Rozgrywający \nna pozycji nr 1', s2: 'Rozgrywający \nna pozycji nr 2', s3: 'Rozgrywający \nna pozycji nr 3', s4: 'Rozgrywający \nna pozycji nr 4', s5: 'Rozgrywający \nna pozycji nr 5', s6: 'Rozgrywający \nna pozycji nr 6' },
+        actionControl: { base: 'Ustawienie\npoczątkowe', serve: 'Serwis', set: 'Rozegranie', switch: 'Przejście', pass: 'Przyjęcie', attack: 'Atak' },
         tutorial: [
-          'Next',
-          'This is a player. Click to highlight it.\n\nH=Hitter, M=Middle, S=Setter, \nO=Opposite',
-          'This is the court, with all 6 players.\nAs you click the buttons, the players\n will move round the court',
-          'This lets you select the rotations.\nClick the circle to change rotation.\nEach one is labelled with the\nsetter\'s position',
-          'These are for when you are serving',
-          'These are for when you are\nreceiving',
-          'Moving from circle to circle makes\n you rotate like in a match',
-          'This lets you select the phase of\n the rally.  The players will then\nmove around the court',
-          'These show the player positions\n when your side is serving',
-          'These show the player positions\n when your side is receiving',
+          'Samouczek',
+          'Następny',
+          'This is a player. Click to highlight it.\n\nP=Przyjmujący, S=Środkowy,\nR=Rozgrywający, A=Atakujący',
+          'To jest boisko ze wszystkimi\nsześcioma graczami. Klikając w\nprzyciski sprawisz,że zawodnicy\nbędą poruszać się po boisku',
+          'Tutaj możesz wybrać rotacje.\nNaciśnij na kółko, żeby zmienić\nrotację. nKażda jest oznaczona\nz pozycją rozgrywającego',
+          'To są rotacje gdy serwujesz',
+          'To są rotacje gdy odbierasz\nzagrywkę',
+          'Poruszanie się od kółka do kółka,\npowoduje rotacje jak podczas meczu',
+          'To pozwoli Ci wybrać fazę akcji.\nZawodnicy będą wtedy poruszać się\npo boisku',
+          'To pokazuje pozycję zawdników,\ngdy serwujecie',
+          'To pokazuje pozycję zawdników,\ngdy odbieracie zagrywkę'
         ]
       },
       'nl': {
@@ -135,6 +139,7 @@ class VBTutorialServeReceieve extends VBTutorial {
         rotationControl: { serving: 'Serving', receiving: 'Receiving', s1: 'Setter at 1', s2: 'Setter at 2', s3: 'Setter at 3', s4: 'Setter at 4', s5: 'Setter at 5', s6: 'Setter at 6' },
         actionControl: { base: 'Base', serve: 'Serve', set: 'Set', switch: 'Switch', pass: 'Pass', attack: 'Attack' },
         tutorial: [
+          'Tutorial',
           'Next',
           'This is a player. Click to highlight it.\n\nH=Hitter, M=Middle, S=Setter, \nO=Opposite',
           'This is the court, with all 6 players.\nAs you click the buttons, the players\n will move round the court',
@@ -152,6 +157,7 @@ class VBTutorialServeReceieve extends VBTutorial {
         rotationControl: { serving: 'Serving', receiving: 'Receiving', s1: 'Setter at 1', s2: 'Setter at 2', s3: 'Setter at 3', s4: 'Setter at 4', s5: 'Setter at 5', s6: 'Setter at 6' },
         actionControl: { base: 'Base', serve: 'Serve', set: 'Set', switch: 'Switch', pass: 'Pass', attack: 'Attack' },
         tutorial: [
+          'Tutorial',
           'Next',
           'This is a player. Click to highlight it.\n\nH=Hitter, M=Middle, S=Setter, \nO=Opposite',
           'This is the court, with all 6 players.\nAs you click the buttons, the players\n will move round the court',
@@ -166,9 +172,10 @@ class VBTutorialServeReceieve extends VBTutorial {
       },
       'es': {
         players: { s: 'Co', o: 'O', m1: 'C1', m2: 'C2', h1: 'A1', h2: 'A2'},
-        rotationControl: { serving: 'Servicio', receiving: 'Recepción', s1: 'Colocadora en 1', s2: 'Colocadora\n en 2', s3: 'Colocadora en 3', s4: 'Colocadora en 4', s5: 'Colocadora en 5', s6: 'Colocadora en 6' },
+        rotationControl: { serving: 'Servicio', receiving: 'Recepción', s1: 'Colocadora\nen 1', s2: 'Colocadora\n en 2', s3: 'Colocadora\nen 3', s4: 'Colocadora\nen 4', s5: 'Colocadora\nen 5', s6: 'Colocadora\nen 6' },
         actionControl: { base: 'Base', serve: 'Servicio', set: 'Set', switch: 'Cambiar', pass: 'Pass', attack: 'Ataque' },
         tutorial: [
+          'Tutorial',
           'Next',
           'This is a player. Click to highlight it.\n\nA=Atacante, C#=Central,\nCo=Colocadora,O=Opuesta',
           'This is the court, with all 6 players.\nAs you click the buttons, the players\n will move round the court',
@@ -199,9 +206,9 @@ class VBTutorialServeReceieve extends VBTutorial {
           top:    700 * this.svg.scale,
           bottom: 900 * this.svg.scale,
         },
-        text: this.text[this.language].tutorial[1],
+        text: this.text[this.language].tutorial[2],
         nextPosition: {
-          left: 1120 * this.svg.scale,
+          left: 1080 * this.svg.scale,
           top:  950 * this.svg.scale,
         },
       },
@@ -218,16 +225,16 @@ class VBTutorialServeReceieve extends VBTutorial {
           top:    400 * this.svg.scale,
           bottom: 600 * this.svg.scale,
         },
-        text: this.text[this.language].tutorial[2],
+        text: this.text[this.language].tutorial[3],
         nextPosition: {
-          left: 1470 * this.svg.scale,
+          left: 1430 * this.svg.scale,
           top:  650 * this.svg.scale,
         },
       },
       {
         boxPosition: {
           left:   1150 * this.svg.scale,
-          right:  1650 * this.svg.scale,
+          right:  1700 * this.svg.scale,
           top:    50 * this.svg.scale,
           bottom: 1070 * this.svg.scale,
         },
@@ -237,9 +244,9 @@ class VBTutorialServeReceieve extends VBTutorial {
           top:    50 * this.svg.scale,
           bottom: 270 * this.svg.scale,
         },
-        text: this.text[this.language].tutorial[3],
+        text: this.text[this.language].tutorial[4],
         nextPosition: {
-          left: 900 * this.svg.scale,
+          left: 860 * this.svg.scale,
           top:  300 * this.svg.scale,
         },
       },
@@ -256,9 +263,9 @@ class VBTutorialServeReceieve extends VBTutorial {
           top:    150 * this.svg.scale,
           bottom: 350 * this.svg.scale,
         },
-        text: this.text[this.language].tutorial[4],
+        text: this.text[this.language].tutorial[5],
         nextPosition: {
-          left: 900 * this.svg.scale,
+          left: 860 * this.svg.scale,
           top:  400 * this.svg.scale,
         },
       },
@@ -275,9 +282,9 @@ class VBTutorialServeReceieve extends VBTutorial {
           top:    250 * this.svg.scale,
           bottom: 450 * this.svg.scale,
         },
-        text: this.text[this.language].tutorial[5],
+        text: this.text[this.language].tutorial[6],
         nextPosition: {
-          left: 900 * this.svg.scale,
+          left: 860 * this.svg.scale,
           top:  500 * this.svg.scale,
         },
       },
@@ -294,18 +301,18 @@ class VBTutorialServeReceieve extends VBTutorial {
           top:    350 * this.svg.scale,
           bottom: 550 * this.svg.scale,
         },
-        text: this.text[this.language].tutorial[6],
+        text: this.text[this.language].tutorial[7],
         nextPosition: {
-          left: 900 * this.svg.scale,
+          left: 860 * this.svg.scale,
           top:  600 * this.svg.scale,
         },
       },
       {
         boxPosition: {
-          left:   80 * this.svg.scale,
-          right:  1016 * this.svg.scale,
+          left:   10 * this.svg.scale,
+          right:  1110 * this.svg.scale,
           top:    1120 * this.svg.scale,
-          bottom: 1500 * this.svg.scale,
+          bottom: 1570 * this.svg.scale,
         },
         textPosition: {
           left:   90 * this.svg.scale,
@@ -313,7 +320,7 @@ class VBTutorialServeReceieve extends VBTutorial {
           top:    880 * this.svg.scale,
           bottom: 1080 * this.svg.scale,
         },
-        text: this.text[this.language].tutorial[7],
+        text: this.text[this.language].tutorial[8],
         nextPosition: {
           left: 760 * this.svg.scale,
           top:  1000 * this.svg.scale,
@@ -321,10 +328,10 @@ class VBTutorialServeReceieve extends VBTutorial {
       },
       {
         boxPosition: {
-          left:   80 * this.svg.scale,
-          right:  1016 * this.svg.scale,
+          left:   10 * this.svg.scale,
+          right:  1110 * this.svg.scale,
           top:    1120 * this.svg.scale,
-          bottom: 1314 * this.svg.scale,
+          bottom: 1334 * this.svg.scale,
         },
         textPosition: {
           left:   140 * this.svg.scale,
@@ -332,7 +339,7 @@ class VBTutorialServeReceieve extends VBTutorial {
           top:    880 * this.svg.scale,
           bottom: 1080 * this.svg.scale,
         },
-        text: this.text[this.language].tutorial[8],
+        text: this.text[this.language].tutorial[9],
         nextPosition: {
           left: 810 * this.svg.scale,
           top:  1000 * this.svg.scale,
@@ -340,10 +347,10 @@ class VBTutorialServeReceieve extends VBTutorial {
       },
       {
         boxPosition: {
-          left:   80 * this.svg.scale,
-          right:  1016 * this.svg.scale,
-          top:    1316 * this.svg.scale,
-          bottom: 1500 * this.svg.scale,
+          left:   10 * this.svg.scale,
+          right:  1110 * this.svg.scale,
+          top:    1336 * this.svg.scale,
+          bottom: 1570 * this.svg.scale,
         },
         textPosition: {
           left:   190 * this.svg.scale,
@@ -351,7 +358,7 @@ class VBTutorialServeReceieve extends VBTutorial {
           top:    880 * this.svg.scale,
           bottom: 1080 * this.svg.scale,
         },
-        text: this.text[this.language].tutorial[9],
+        text: this.text[this.language].tutorial[10],
         nextPosition: {
           left: 860 * this.svg.scale,
           top:  1000 * this.svg.scale,
@@ -747,29 +754,42 @@ class VBTutorialServeReceieve extends VBTutorial {
     }
   }
 
+  multilineText (text, lineHeight, style) {
+    let textGroup
+    text.split('\n').forEach((textChunks, i) => {
+      let textLine = this.svg.snapRoot.text(0, 0 + (i * lineHeight * this.svg.scale), textChunks).attr(style)
+      if (textGroup) {
+        textGroup.add(textLine)
+      } else {
+        textGroup = this.svg.snapRoot.group(textLine)
+      }
+    })
+    return textGroup
+  }
+
   drawRotationControl () {
     const vOffset1 = 20 * this.svg.scale
     const vOffset2 = 140 * this.svg.scale
 
-    const box1 = this.svg.snapRoot.rect(0, 0 * this.svg.scale, 500 * this.svg.scale, 60 * this.svg.scale).attr({
+    const box1 = this.svg.snapRoot.rect(0, 0 * this.svg.scale, 540 * this.svg.scale, 60 * this.svg.scale).attr({
       fill: this.colours.rotationControlBackgroundColourB,
     })
-    const box2 = this.svg.snapRoot.rect(0, 60 * this.svg.scale, 500 * this.svg.scale, 160 * this.svg.scale).attr({
+    const box2 = this.svg.snapRoot.rect(0, 60 * this.svg.scale, 540 * this.svg.scale, 160 * this.svg.scale).attr({
       fill: this.colours.rotationControlBackgroundColourA,
     })
-    const box3 = this.svg.snapRoot.rect(0, 60 * this.svg.scale + (1 * (vOffset1 + vOffset2)), 500 * this.svg.scale, 160 * this.svg.scale).attr({
+    const box3 = this.svg.snapRoot.rect(0, 60 * this.svg.scale + (1 * (vOffset1 + vOffset2)), 540 * this.svg.scale, 160 * this.svg.scale).attr({
       fill: this.colours.rotationControlBackgroundColourB,
     })
-    const box4 = this.svg.snapRoot.rect(0, 60 * this.svg.scale + (2 * (vOffset1 + vOffset2)), 500 * this.svg.scale, 160 * this.svg.scale).attr({
+    const box4 = this.svg.snapRoot.rect(0, 60 * this.svg.scale + (2 * (vOffset1 + vOffset2)), 540 * this.svg.scale, 160 * this.svg.scale).attr({
       fill: this.colours.rotationControlBackgroundColourA,
     })
-    const box5 = this.svg.snapRoot.rect(0, 60 * this.svg.scale + (3 * (vOffset1 + vOffset2)), 500 * this.svg.scale, 160 * this.svg.scale).attr({
+    const box5 = this.svg.snapRoot.rect(0, 60 * this.svg.scale + (3 * (vOffset1 + vOffset2)), 540 * this.svg.scale, 160 * this.svg.scale).attr({
       fill: this.colours.rotationControlBackgroundColourB,
     })
-    const box6 = this.svg.snapRoot.rect(0, 60 * this.svg.scale + (4 * (vOffset1 + vOffset2)), 500 * this.svg.scale, 160 * this.svg.scale).attr({
+    const box6 = this.svg.snapRoot.rect(0, 60 * this.svg.scale + (4 * (vOffset1 + vOffset2)), 540 * this.svg.scale, 160 * this.svg.scale).attr({
       fill: this.colours.rotationControlBackgroundColourA,
     })
-    const box7 = this.svg.snapRoot.rect(0, 60 * this.svg.scale + (5 * (vOffset1 + vOffset2)), 500 * this.svg.scale, 161 * this.svg.scale).attr({
+    const box7 = this.svg.snapRoot.rect(0, 60 * this.svg.scale + (5 * (vOffset1 + vOffset2)), 540 * this.svg.scale, 161 * this.svg.scale).attr({
       fill: this.colours.rotationControlBackgroundColourB,
     })
     const backgroundBoxes = this.svg.snapRoot.group(box1, box2, box3, box4, box5, box6, box7)
@@ -792,54 +812,54 @@ class VBTutorialServeReceieve extends VBTutorial {
     })
     const headingLabels = this.svg.snapRoot.group(textHeadingS, textHeadingR)
 
-    const textLabel2 = this.svg.snapRoot.text(480 * this.svg.scale, 100 * this.svg.scale, this.text[this.language].rotationControl.s2).attr({
+    const textLabel2 = this.multilineText(this.text[this.language].rotationControl.s2, 28, {
       fill: this.colours.rotationControlColour,
       stroke: this.colours.rotationControlColour,
       strokeWidth: 2 * this.svg.scale,
-      'text-anchor':'end',
+      'text-anchor': 'middle',
       'font-family': 'Verdana',
-      'font-size': '' + 28 * this.svg.scale,
-    })
-    const textLabel1 = this.svg.snapRoot.text(480 * this.svg.scale, 100 * this.svg.scale + (1 * (vOffset1 + vOffset2)), this.text[this.language].rotationControl.s1).attr({
+      'font-size': 28 * this.svg.scale,
+    }).transform(`t${420 * this.svg.scale}, ${100 * this.svg.scale}`)
+    const textLabel1 = this.multilineText(this.text[this.language].rotationControl.s1, 28, {
       fill: this.colours.rotationControlColour,
       stroke: this.colours.rotationControlColour,
       strokeWidth: 2 * this.svg.scale,
-      'text-anchor':'end',
+      'text-anchor': 'middle',
       'font-family': 'Verdana',
-      'font-size': '' + 28 * this.svg.scale,
-    })
-    const textLabel6 = this.svg.snapRoot.text(480 * this.svg.scale, 100 * this.svg.scale + (2 * (vOffset1 + vOffset2)), this.text[this.language].rotationControl.s6).attr({
+      'font-size': 28 * this.svg.scale,
+    }).transform(`t${420 * this.svg.scale}, ${100 * this.svg.scale + (1 * (vOffset1 + vOffset2))}`)
+    const textLabel6 = this.multilineText(this.text[this.language].rotationControl.s6, 28, {
       fill: this.colours.rotationControlColour,
       stroke: this.colours.rotationControlColour,
       strokeWidth: 2 * this.svg.scale,
-      'text-anchor':'end',
+      'text-anchor': 'middle',
       'font-family': 'Verdana',
-      'font-size': '' + 28 * this.svg.scale,
-    })
-    const textLabel5 = this.svg.snapRoot.text(480 * this.svg.scale, 100 * this.svg.scale + (3 * (vOffset1 + vOffset2)), this.text[this.language].rotationControl.s5).attr({
+      'font-size': 28 * this.svg.scale,
+    }).transform(`t${420 * this.svg.scale}, ${100 * this.svg.scale + (2 * (vOffset1 + vOffset2))}`)
+    const textLabel5 = this.multilineText(this.text[this.language].rotationControl.s5, 28, {
       fill: this.colours.rotationControlColour,
       stroke: this.colours.rotationControlColour,
       strokeWidth: 2 * this.svg.scale,
-      'text-anchor':'end',
+      'text-anchor': 'middle',
       'font-family': 'Verdana',
-      'font-size': '' + 28 * this.svg.scale,
-    })
-    const textLabel4 = this.svg.snapRoot.text(480 * this.svg.scale, 100 * this.svg.scale + (4 * (vOffset1 + vOffset2)), this.text[this.language].rotationControl.s4).attr({
+      'font-size': 28 * this.svg.scale,
+    }).transform(`t${420 * this.svg.scale}, ${100 * this.svg.scale + (3 * (vOffset1 + vOffset2))}`)
+    const textLabel4 = this.multilineText(this.text[this.language].rotationControl.s4, 28, {
       fill: this.colours.rotationControlColour,
       stroke: this.colours.rotationControlColour,
       strokeWidth: 2 * this.svg.scale,
-      'text-anchor':'end',
+      'text-anchor': 'middle',
       'font-family': 'Verdana',
-      'font-size': '' + 28 * this.svg.scale,
-    })
-    const textLabel3 = this.svg.snapRoot.text(480 * this.svg.scale, 100 * this.svg.scale + (5 * (vOffset1 + vOffset2)), this.text[this.language].rotationControl.s3).attr({
+      'font-size': 28 * this.svg.scale,
+    }).transform(`t${420 * this.svg.scale}, ${100 * this.svg.scale + (4 * (vOffset1 + vOffset2))}`)
+    const textLabel3 = this.multilineText(this.text[this.language].rotationControl.s3, 28, {
       fill: this.colours.rotationControlColour,
       stroke: this.colours.rotationControlColour,
       strokeWidth: 2 * this.svg.scale,
-      'text-anchor':'end',
+      'text-anchor': 'middle',
       'font-family': 'Verdana',
-      'font-size': '' + 28 * this.svg.scale,
-    })
+      'font-size': 28 * this.svg.scale,
+    }).transform(`t${420 * this.svg.scale}, ${100 * this.svg.scale + (5 * (vOffset1 + vOffset2))}`)
     const rotationLabels = this.svg.snapRoot.group(textLabel1, textLabel2, textLabel3, textLabel4, textLabel5, textLabel6)
 
     const joinLine1 = this.svg.snapRoot.line(80 * this.svg.scale, 100 * this.svg.scale, 280 * this.svg.scale, 100 * this.svg.scale + (1 * vOffset1)).attr({
@@ -1010,51 +1030,53 @@ class VBTutorialServeReceieve extends VBTutorial {
   }
 
   drawActionControl () {
-    const actionBox1 = this.svg.snapRoot.rect(0, 170 * this.svg.scale, 188 * this.svg.scale, 380 * this.svg.scale).attr({
+    const xOffSet = 220
+    const actionBox1 = this.svg.snapRoot.rect(0, 170 * this.svg.scale, xOffSet * this.svg.scale, 450 * this.svg.scale).attr({
       fill: this.colours.rotationControlBackgroundColourB
     })
-    const actionBox2 = this.svg.snapRoot.rect(188 * this.svg.scale, 170 * this.svg.scale, 188 * this.svg.scale, 380 * this.svg.scale).attr({
+    const actionBox2 = this.svg.snapRoot.rect(xOffSet * this.svg.scale, 170 * this.svg.scale, xOffSet * this.svg.scale, 450 * this.svg.scale).attr({
       fill: this.colours.rotationControlBackgroundColourA
     })
-    const actionBox3 = this.svg.snapRoot.rect(376 * this.svg.scale, 170 * this.svg.scale, 188 * this.svg.scale, 380 * this.svg.scale).attr({
+    const actionBox3 = this.svg.snapRoot.rect((2 * xOffSet) * this.svg.scale, 170 * this.svg.scale, xOffSet * this.svg.scale, 450 * this.svg.scale).attr({
       fill: this.colours.rotationControlBackgroundColourB
     })
-    const actionBox4 = this.svg.snapRoot.rect(564 * this.svg.scale, 170 * this.svg.scale, 184 * this.svg.scale, 380 * this.svg.scale).attr({
+    const actionBox4 = this.svg.snapRoot.rect((3 * xOffSet) * this.svg.scale, 170 * this.svg.scale, xOffSet * this.svg.scale, 450 * this.svg.scale).attr({
       fill: this.colours.rotationControlBackgroundColourA
     })
-    const actionBox5 = this.svg.snapRoot.rect(748 * this.svg.scale, 170 * this.svg.scale, 192 * this.svg.scale, 380 * this.svg.scale).attr({
+    const actionBox5 = this.svg.snapRoot.rect((4 * xOffSet) * this.svg.scale, 170 * this.svg.scale, xOffSet * this.svg.scale, 450 * this.svg.scale).attr({
       fill: this.colours.rotationControlBackgroundColourB
     })
     const actionBoxes = this.svg.snapRoot.group(actionBox1, actionBox2, actionBox3, actionBox4, actionBox5)
-
-    const linkBar1 = this.svg.snapRoot.rect(940 * this.svg.scale, 230 * this.svg.scale, 230 * this.svg.scale, 40 * this.svg.scale).attr({
+// 990
+// 1240
+    const linkBar1 = this.svg.snapRoot.rect((4.5 * xOffSet) * this.svg.scale, 230 * this.svg.scale, (1240 - (4.5 * xOffSet)) * this.svg.scale, 40 * this.svg.scale).attr({
       fill: this.colours.rotationControlBackgroundColourB
     })
-    const linkBar2 = this.svg.snapRoot.rect(1130 * this.svg.scale, 120 * this.svg.scale, 40 * this.svg.scale, 150 * this.svg.scale).attr({
+    const linkBar2 = this.svg.snapRoot.rect(1200 * this.svg.scale, 120 * this.svg.scale, 40 * this.svg.scale, 150 * this.svg.scale).attr({
       fill: this.colours.rotationControlBackgroundColourB
     })
-    const linkBar3 = this.svg.snapRoot.rect(940 * this.svg.scale, 430 * this.svg.scale, 430 * this.svg.scale, 40 * this.svg.scale).attr({
+    const linkBar3 = this.svg.snapRoot.rect((4.5 * xOffSet) * this.svg.scale, 450 * this.svg.scale, (1440 - (4.5 * xOffSet)) * this.svg.scale, 40 * this.svg.scale).attr({
       fill: this.colours.rotationControlBackgroundColourB
     })
-    const linkBar4 = this.svg.snapRoot.rect(1330 * this.svg.scale, 120 * this.svg.scale, 40 * this.svg.scale, 350 * this.svg.scale).attr({
+    const linkBar4 = this.svg.snapRoot.rect(1400 * this.svg.scale, 120 * this.svg.scale, 40 * this.svg.scale, 370 * this.svg.scale).attr({
       fill: this.colours.rotationControlBackgroundColourB
     })
-    const linkLine1 = this.svg.snapRoot.line(90 * this.svg.scale, 250 * this.svg.scale, 1150 * this.svg.scale, 250 * this.svg.scale).attr({
+    const linkLine1 = this.svg.snapRoot.line((xOffSet/2) * this.svg.scale, 250 * this.svg.scale, 1220 * this.svg.scale, 250 * this.svg.scale).attr({
       stroke: this.colours.rotationControlColour,
       strokeWidth: 1,
       'stroke-dasharray': 12 * this.svg.scale + ', ' + 12 * this.svg.scale
     })
-    const linkLine2 = this.svg.snapRoot.line(1150 * this.svg.scale, 250 * this.svg.scale, 1150 * this.svg.scale, this.svg.rotationControlCirleRadius).attr({
+    const linkLine2 = this.svg.snapRoot.line(1220 * this.svg.scale, 250 * this.svg.scale, 1220 * this.svg.scale, this.svg.rotationControlCirleRadius).attr({
       stroke: this.colours.rotationControlColour,
       strokeWidth: 1,
       'stroke-dasharray': 12 * this.svg.scale + ', ' + 12 * this.svg.scale
     })
-    const linkLine3 = this.svg.snapRoot.line(90 * this.svg.scale, 450 * this.svg.scale, 1350 * this.svg.scale, 450 * this.svg.scale).attr({
+    const linkLine3 = this.svg.snapRoot.line((xOffSet/2) * this.svg.scale, 470 * this.svg.scale, 1420 * this.svg.scale, 470 * this.svg.scale).attr({
       stroke: this.colours.rotationControlColour,
       strokeWidth: 1,
       'stroke-dasharray': 12 * this.svg.scale + ', ' + 12 * this.svg.scale
     })
-    const linkLine4 = this.svg.snapRoot.line(1350 * this.svg.scale, 450 * this.svg.scale, 1350 * this.svg.scale, 20 * this.svg.scale + this.svg.rotationControlCirleRadius).attr({
+    const linkLine4 = this.svg.snapRoot.line(1420 * this.svg.scale, 470 * this.svg.scale, 1420 * this.svg.scale, 20 * this.svg.scale + this.svg.rotationControlCirleRadius).attr({
       stroke: this.colours.rotationControlColour,
       strokeWidth: 1,
       'stroke-dasharray': 12 * this.svg.scale + ', ' + 12 * this.svg.scale
@@ -1070,7 +1092,7 @@ class VBTutorialServeReceieve extends VBTutorial {
       'font-family': 'Verdana',
       'font-size': 28 * this.svg.scale
     })
-    const textHeadingR = this.svg.snapRoot.text(80 * this.svg.scale, 396 * this.svg.scale, this.text[this.language].rotationControl.receiving)
+    const textHeadingR = this.svg.snapRoot.text(80 * this.svg.scale, 416 * this.svg.scale, this.text[this.language].rotationControl.receiving)
     textHeadingR.attr({
       fill: this.colours.rotationControlColour,
       stroke: this.colours.rotationControlColour,
@@ -1081,19 +1103,19 @@ class VBTutorialServeReceieve extends VBTutorial {
     })
     const headingLabels = this.svg.snapRoot.group(textHeadingS, textHeadingR)
 
-    this.controlServeBase = this.svg.snapRoot.circle(90 * this.svg.scale, 250 * this.svg.scale, this.svg.rotationControlCirleRadius).attr({
+    this.controlServeBase = this.svg.snapRoot.circle((0.5 * xOffSet) * this.svg.scale, 250 * this.svg.scale, this.svg.rotationControlCirleRadius).attr({
       stroke: this.colours.rotationControlColour,
       strokeWidth: 4 * this.svg.scale,
       fill: this.colours.rotationControlColour,
       cursor: 'pointer'
     })
-    this.controlServeServe = this.svg.snapRoot.circle(460 * this.svg.scale, 250 * this.svg.scale, this.svg.rotationControlCirleRadius).attr({
+    this.controlServeServe = this.svg.snapRoot.circle((2.5 * xOffSet) * this.svg.scale, 250 * this.svg.scale, this.svg.rotationControlCirleRadius).attr({
       stroke: this.colours.rotationControlColour,
       strokeWidth: 4 * this.svg.scale,
       fill: this.colours.rotationControlBackgroundColourA,
       cursor: 'pointer'
     })
-    this.controlServeSwitch = this.svg.snapRoot.circle(830 * this.svg.scale, 250 * this.svg.scale, this.svg.rotationControlCirleRadius).attr({
+    this.controlServeSwitch = this.svg.snapRoot.circle((4.5 * xOffSet) * this.svg.scale, 250 * this.svg.scale, this.svg.rotationControlCirleRadius).attr({
       stroke: this.colours.rotationControlColour,
       strokeWidth: 4 * this.svg.scale,
       fill: this.colours.rotationControlBackgroundColourA,
@@ -1101,31 +1123,31 @@ class VBTutorialServeReceieve extends VBTutorial {
     })
     const controlServe = this.svg.snapRoot.group(this.controlServeBase, this.controlServeServe, this.controlServeSwitch)
 
-    this.controlReceiveBase = this.svg.snapRoot.circle(90 * this.svg.scale, 450 * this.svg.scale, this.svg.rotationControlCirleRadius).attr({
+    this.controlReceiveBase = this.svg.snapRoot.circle((0.5 * xOffSet) * this.svg.scale, 470 * this.svg.scale, this.svg.rotationControlCirleRadius).attr({
       stroke: this.colours.rotationControlColour,
       strokeWidth: 4 * this.svg.scale,
       fill: this.colours.rotationControlBackgroundColourA,
       cursor: 'pointer'
     })
-    this.controlReceiveReceive = this.svg.snapRoot.circle(274 * this.svg.scale, 450 * this.svg.scale, this.svg.rotationControlCirleRadius).attr({
+    this.controlReceiveReceive = this.svg.snapRoot.circle((1.5 * xOffSet) * this.svg.scale, 470 * this.svg.scale, this.svg.rotationControlCirleRadius).attr({
       stroke: this.colours.rotationControlColour,
       strokeWidth: 4 * this.svg.scale,
       fill: this.colours.rotationControlBackgroundColourA,
       cursor: 'pointer'
     })
-    this.controlReceiveSet = this.svg.snapRoot.circle(460 * this.svg.scale, 450 * this.svg.scale, this.svg.rotationControlCirleRadius).attr({
+    this.controlReceiveSet = this.svg.snapRoot.circle((2.5 * xOffSet) * this.svg.scale, 470 * this.svg.scale, this.svg.rotationControlCirleRadius).attr({
       stroke: this.colours.rotationControlColour,
       strokeWidth: 4 * this.svg.scale,
       fill: this.colours.rotationControlBackgroundColourA,
       cursor: 'pointer'
     })
-    this.controlReceiveHit = this.svg.snapRoot.circle(646 * this.svg.scale, 450 * this.svg.scale, this.svg.rotationControlCirleRadius).attr({
+    this.controlReceiveHit = this.svg.snapRoot.circle((3.5 * xOffSet) * this.svg.scale, 470 * this.svg.scale, this.svg.rotationControlCirleRadius).attr({
       stroke: this.colours.rotationControlColour,
       strokeWidth: 4 * this.svg.scale,
       fill: this.colours.rotationControlBackgroundColourA,
       cursor: 'pointer'
     })
-    this.controlReceiveSwitch = this.svg.snapRoot.circle(830 * this.svg.scale, 450 * this.svg.scale, this.svg.rotationControlCirleRadius).attr({
+    this.controlReceiveSwitch = this.svg.snapRoot.circle((4.5 * xOffSet) * this.svg.scale, 470 * this.svg.scale, this.svg.rotationControlCirleRadius).attr({
       stroke: this.colours.rotationControlColour,
       strokeWidth: 4 * this.svg.scale,
       fill: this.colours.rotationControlBackgroundColourA,
@@ -1133,71 +1155,71 @@ class VBTutorialServeReceieve extends VBTutorial {
     })
     const controlReceive = this.svg.snapRoot.group(this.controlReceiveBase, this.controlReceiveReceive, this.controlReceiveSet, this.controlReceiveHit, this.controlReceiveSwitch)
 
-    const textLabelS1 = this.svg.snapRoot.text(90 * this.svg.scale, 330 * this.svg.scale, this.text[this.language].actionControl.base).attr({
+    const textLabelS1 = this.multilineText(this.text[this.language].actionControl.base, 36, {
       fill: this.colours.rotationControlColour,
       stroke: this.colours.rotationControlColour,
       strokeWidth: 2 * this.svg.scale,
       'text-anchor':'middle',
       'font-family': 'Verdana',
-      'font-size': 44 * this.svg.scale
+      'font-size': 36 * this.svg.scale
+    }).transform(`t${(0.5 * xOffSet) * this.svg.scale},${330 * this.svg.scale}`)
+    const textLabelS2 = this.svg.snapRoot.text((2.5 * xOffSet) * this.svg.scale, 330 * this.svg.scale, this.text[this.language].actionControl.serve).attr({
+      fill: this.colours.rotationControlColour,
+      stroke: this.colours.rotationControlColour,
+      strokeWidth: 2 * this.svg.scale,
+      'text-anchor':'middle',
+      'font-family': 'Verdana',
+      'font-size': 36 * this.svg.scale
     })
-    const textLabelS2 = this.svg.snapRoot.text(460 * this.svg.scale, 330 * this.svg.scale, this.text[this.language].actionControl.serve).attr({
+    const textLabelS3 = this.svg.snapRoot.text((4.5 * xOffSet) * this.svg.scale, 330 * this.svg.scale, this.text[this.language].actionControl.switch).attr({
       fill: this.colours.rotationControlColour,
       stroke: this.colours.rotationControlColour,
       strokeWidth: 2 * this.svg.scale,
       'text-anchor':'middle',
       'font-family': 'Verdana',
-      'font-size': 44 * this.svg.scale
-    })
-    const textLabelS3 = this.svg.snapRoot.text(830 * this.svg.scale, 330 * this.svg.scale, this.text[this.language].actionControl.switch).attr({
-      fill: this.colours.rotationControlColour,
-      stroke: this.colours.rotationControlColour,
-      strokeWidth: 2 * this.svg.scale,
-      'text-anchor':'middle',
-      'font-family': 'Verdana',
-      'font-size': 44 * this.svg.scale
+      'font-size': 36 * this.svg.scale
     })
     const textLabelS = this.svg.snapRoot.group(textLabelS1, textLabelS2, textLabelS3)
 
-    const textLabelR1 = this.svg.snapRoot.text(90 * this.svg.scale, 530 * this.svg.scale, this.text[this.language].actionControl.base).attr({
+    const textLabelR1 = this.multilineText(this.text[this.language].actionControl.base, 36, {
       fill: this.colours.rotationControlColour,
       stroke: this.colours.rotationControlColour,
       strokeWidth: 2 * this.svg.scale,
       'text-anchor':'middle',
       'font-family': 'Verdana',
-      'font-size': 44 * this.svg.scale
+      'font-size': 36 * this.svg.scale
+    }).transform(`t${(0.5 * xOffSet) * this.svg.scale}, ${550 * this.svg.scale}`)
+    const textLabelR2 = this.svg.snapRoot.text((1.5 * xOffSet) * this.svg.scale, 550 * this.svg.scale, this.text[this.language].actionControl.pass).attr({
+      fill: this.colours.rotationControlColour,
+      stroke: this.colours.rotationControlColour,
+      strokeWidth: 2 * this.svg.scale,
+      'text-anchor':'middle',
+      'font-family': 'Verdana',
+      'font-size': 36 * this.svg.scale
     })
-    const textLabelR2 = this.svg.snapRoot.text(274 * this.svg.scale, 530 * this.svg.scale, this.text[this.language].actionControl.pass).attr({
+    const textLabelR3 = this.svg.snapRoot.text((2.5 * xOffSet) * this.svg.scale, 550 * this.svg.scale, this.text[this.language].actionControl.set).attr({
       fill: this.colours.rotationControlColour,
       stroke: this.colours.rotationControlColour,
       strokeWidth: 2 * this.svg.scale,
       'text-anchor':'middle',
       'font-family': 'Verdana',
-      'font-size': 44 * this.svg.scale
+      'font-size': 36 * this.svg.scale
     })
-    const textLabelR3 = this.svg.snapRoot.text(460 * this.svg.scale, 530 * this.svg.scale, this.text[this.language].actionControl.set).attr({
+    const textLabelR4 = this.svg.snapRoot.text((3.5 * xOffSet) * this.svg.scale, 550 * this.svg.scale, this.text[this.language].actionControl.attack).attr({
       fill: this.colours.rotationControlColour,
       stroke: this.colours.rotationControlColour,
       strokeWidth: 2 * this.svg.scale,
       'text-anchor':'middle',
       'font-family': 'Verdana',
-      'font-size': 44 * this.svg.scale
+      'font-size': 36 * this.svg.scale
     })
-    const textLabelR4 = this.svg.snapRoot.text(646 * this.svg.scale, 530 * this.svg.scale, this.text[this.language].actionControl.attack).attr({
+    const textLabelR5 = this.svg.snapRoot.text((4.5 * xOffSet) * this.svg.scale, 550 * this.svg.scale, this.text[this.language].actionControl.switch).attr({
       fill: this.colours.rotationControlColour,
       stroke: this.colours.rotationControlColour,
       strokeWidth: 2 * this.svg.scale,
       'text-anchor':'middle',
       'font-family': 'Verdana',
-      'font-size': 44 * this.svg.scale
-    })
-    const textLabelR5 = this.svg.snapRoot.text(830 * this.svg.scale, 530 * this.svg.scale, this.text[this.language].actionControl.switch).attr({
-      fill: this.colours.rotationControlColour,
-      stroke: this.colours.rotationControlColour,
-      strokeWidth: 2 * this.svg.scale,
-      'text-anchor':'middle',
-      'font-family': 'Verdana',
-      'font-size': 44 * this.svg.scale
+      'font-size': 36 * this.svg.scale
     })
     const textLabelR = this.svg.snapRoot.group(textLabelR1, textLabelR2, textLabelR3, textLabelR4, textLabelR5)
 
@@ -1212,7 +1234,7 @@ class VBTutorialServeReceieve extends VBTutorial {
 
     this.actionControls = this.svg.snapRoot.group(actionBoxes, links, headingLabels, controlServe, controlReceive, textLabelS, textLabelR)
 
-    this.actionControls.transform(`t${80 * this.svg.scale}, ${950 * this.svg.scale}`)
+    this.actionControls.transform(`t${10 * this.svg.scale}, ${950 * this.svg.scale}`)
   }
 
   controlSelect (setterPos, serving, action) {
@@ -1266,11 +1288,11 @@ class VBTutorialServeReceieve extends VBTutorial {
   }
 
   drawTutorialButton () {
-    const tutorialButtonBox = this.svg.snapRoot.rect(1500 * this.svg.scale , 1420 * this.svg.scale, 200 * this.svg.scale, 80 * this.svg.scale)
+    const tutorialButtonBox = this.svg.snapRoot.rect(1410 * this.svg.scale , 1480 * this.svg.scale, 280 * this.svg.scale, 80 * this.svg.scale)
     tutorialButtonBox.attr({
       fill: this.colours.tutorialColour
     })
-    const tutorialButtonText = this.svg.snapRoot.text(1600 * this.svg.scale, 1476 * this.svg.scale, 'Tutorial')
+    const tutorialButtonText = this.svg.snapRoot.text(1550 * this.svg.scale, 1536 * this.svg.scale, this.text[this.language].tutorial[0])
     tutorialButtonText.attr({
       fill: this.colours.rotationControlColour,
       stroke: this.colours.rotationControlColour,
@@ -1293,7 +1315,7 @@ class VBTutorialServeReceieve extends VBTutorial {
       return
     }
 
-    var p1 = this.svg.snapRoot.path("M0 0 H" + this.svg.width + "V" + this.svg.height + "H0Z " +
+    const p1 = this.svg.snapRoot.path("M0 0 H" + this.svg.width + "V" + this.svg.height + "H0Z " +
       "M" + this.tutorialData[index].boxPosition.right + " " + this.tutorialData[index].boxPosition.top + " " +
       "H" + this.tutorialData[index].boxPosition.left + "V" + this.tutorialData[index].boxPosition.bottom +
       "H" + this.tutorialData[index].boxPosition.right + "Z")
@@ -1316,7 +1338,7 @@ class VBTutorialServeReceieve extends VBTutorial {
       fill: 'none'
     })
 
-    var textBox = this.svg.snapRoot.rect(
+    const textBox = this.svg.snapRoot.rect(
       this.tutorialData[index].textPosition.left,
       this.tutorialData[index].textPosition.top,
       this.tutorialData[index].textPosition.right - this.tutorialData[index].textPosition.left,
@@ -1328,9 +1350,9 @@ class VBTutorialServeReceieve extends VBTutorial {
 
     this.tutorialTextBox = this.svg.snapRoot.group(textBox)
 
-    var textChunks = this.tutorialData[index].text.split('\n')
+    const textChunks = this.tutorialData[index].text.split('\n')
     for(var i = 0; i < textChunks.length; i++) {
-      var textLine = this.svg.snapRoot.text(this.tutorialData[index].textPosition.left + (10 * this.svg.scale),
+      const textLine = this.svg.snapRoot.text(this.tutorialData[index].textPosition.left + (10 * this.svg.scale),
         this.tutorialData[index].textPosition.top + (42 * this.svg.scale) + (i * 40 * this.svg.scale),
         textChunks[i])
       textLine.attr({
@@ -1345,18 +1367,18 @@ class VBTutorialServeReceieve extends VBTutorial {
       this.tutorialTextBox.add(textLine)
     }
 
-    var nextButtonBox = this.svg.snapRoot.rect(
+    const nextButtonBox = this.svg.snapRoot.rect(
       this.tutorialData[index].nextPosition.left,
       this.tutorialData[index].nextPosition.top,
-      200 * this.svg.scale,
+      240 * this.svg.scale,
       80 * this.svg.scale
     )
     nextButtonBox.attr({
       fill: this.colours.tutorialColour
     })
-    var nextButtonText = this.svg.snapRoot.text(this.tutorialData[index].nextPosition.left + 100 * this.svg.scale,
+    const nextButtonText = this.svg.snapRoot.text(this.tutorialData[index].nextPosition.left + 120 * this.svg.scale,
       this.tutorialData[index].nextPosition.top + (56 * this.svg.scale),
-      this.text[this.language].tutorial[0]
+      this.text[this.language].tutorial[1]
     )
     nextButtonText.attr({
       fill: this.colours.rotationControlColour,

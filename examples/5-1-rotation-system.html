@@ -10,13 +10,13 @@
       let vbTutorialDiv
       let langDivs
 
-      function clean(elem) {
+      function clean (elem) {
         while (elem.firstChild) {
             elem.removeChild(elem.firstChild)
         }
       }
 
-      function createVBTutorial(lang) {
+      function createVBTutorial (lang) {
         if (lang === 'en') {
           window.history.replaceState(null, '', '5-1-rotation-system.html')
         } else {
@@ -31,12 +31,26 @@
         vbTutorial.draw()
       }
 
-      function pickLang(lang) {
+      function pickLang (lang) {
         Object.keys(langDivs).forEach(langKey => {
           langDivs[langKey].style.borderBottom = 'none'
         })
         langDivs[lang].style.borderBottom = '2px solid #ffffff'
         createVBTutorial(lang)
+        changeDescription(lang)
+      }
+
+      function changeDescription (lang) {
+        desc = {
+          en: 'The interactive diagram above can be used to demonstrate a typical 5-1 volleyball rotation system.  You can run the tutorial to show how the diagram works.',
+          fr: 'The interactive diagram above can be used to demonstrate a typical 5-1 volleyball rotation system.  You can run the tutorial to show how the diagram works.',
+          de: 'The interactive diagram above can be used to demonstrate a typical 5-1 volleyball rotation system.  You can run the tutorial to show how the diagram works.',
+          it: 'The interactive diagram above can be used to demonstrate a typical 5-1 volleyball rotation system.  You can run the tutorial to show how the diagram works.',
+          nl: 'The interactive diagram above can be used to demonstrate a typical 5-1 volleyball rotation system.  You can run the tutorial to show how the diagram works.',
+          pl: 'Powyższy interaktywny diagram może posłużyć do zademonstrowania typowego systemu rotacji siatkówki 5-1. Możesz uruchomić samouczek, aby zobaczyć, jak działa diagram.',
+          es: 'The interactive diagram above can be used to demonstrate a typical 5-1 volleyball rotation system.  You can run the tutorial to show how the diagram works.'
+        }
+        document.getElementById('descriptionP').innerHTML = desc[lang]
       }
 
       window.onload = () => {
@@ -69,7 +83,7 @@
     </header>
     <section class="vbrotations">
       <div class="container" id="vbTutorialDiv"></div>
-      <div class="container" style="text-align: right;">
+      <div class="container">
         <div id="lang-en"><img width="26px" src="../img/UK.png" style="cursor: pointer;" title="English" onClick="pickLang('en')"/></div>
         <div id="lang-fr"><img width="26px" src="../img/France.png" style="cursor: pointer;" title="Française - coming soon" onClick="pickLang('fr')"/></div>
         <div id="lang-de"><img width="26px" src="../img/Germany.png" style="cursor: pointer;" title="Deutsche - coming soon" onClick="pickLang('de')"/></div>
@@ -81,7 +95,7 @@
     </section>
     <section class="notes">
       <div class="container">
-        <p>The interactive diagram above can be used to demonstrate a typical 5-1 volleyball rotation system.  You can run the tutorial to show how the diagram works.</p>
+        <p id="descriptionP">The interactive diagram above can be used to demonstrate a typical 5-1 volleyball rotation system.  You can run the tutorial to show how the diagram works.</p>
       </div>
     </section>
     <footer class="footer">
