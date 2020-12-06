@@ -336,7 +336,7 @@ Populates the SVG with all of the tutorial objects.  This only needs to be calle
 
 Thanks to the following for their help with the translations:
 
-- [Maurizio Napolitano](https://github.com/napo) (Italiano)
+- [Maurizio Napolitano](https://github.com/napo), Giorgia Chiodin (Italiano)
 - Sławomir Bruszkowski (Polski)
 
 ## License
