@@ -63,13 +63,13 @@ class VBTutorialServeReceieve extends VBTutorial {
 
     this.text = {
       'en': {
-        players: { s: 'S', o: 'O', m1: 'M1', m2: 'M2', h1: 'H1', h2: 'H2'},
+        players: { s: 'S', o: 'O', m2: 'M2', m1: 'M1', h1: 'H1', h2: 'H2', l: 'L'},
         rotationControl: { serving: 'Serving', receiving: 'Receiving', s1: 'Setter at 1', s2: 'Setter at 2', s3: 'Setter at 3', s4: 'Setter at 4', s5: 'Setter at 5', s6: 'Setter at 6' },
-        actionControl: { base: 'Base', serve: 'Serve', set: 'Set', switch: 'Switch', pass: 'Pass', attack: 'Attack' },
+        actionControl: { servingBase: 'Base', serve: 'Serve', set: 'Set', switch: 'Switch', pass: 'Pass', attack: 'Attack' },
         tutorial: [
           'Tutorial',
           'Next',
-          'This is a player. Click to highlight it.\n\nH=Hitter, M=Middle, S=Setter, \nO=Opposite',
+          'This is a player. Click to highlight it.\n\nH=Hitter, M=Middle, S=Setter, \nO=Opposite, L=Libero',
           'This is the court, with all 6 players.\nAs you click the buttons, the players\n will move round the court',
           'This lets you select the rotations.\nClick the circle to change rotation.\nEach one is labeled with the\nsetter\'s position',
           'These are for when you are serving',
@@ -81,13 +81,13 @@ class VBTutorialServeReceieve extends VBTutorial {
         ]
       },
       'it': {
-        players: { s: 'P', o: 'O', m1: 'C1', m2: 'C2', h1: 'S1', h2: 'S2'},
+        players: { s: 'P', o: 'O', m2: 'C2', m1: 'C1', h1: 'S1', h2: 'S2', l: 'L'},
         rotationControl: { serving: 'Servizio', receiving: 'Ricezione', s1: 'P1', s2: 'P2', s3: 'P3', s4: 'P4', s5: 'P5', s6: 'P6' },
-        actionControl: { base: 'Base', serve: 'Servizio', set: 'Alzata', switch: 'Cambio', pass: 'Ricezione', attack: 'Attacco' },
+        actionControl: { servingBase: 'Base', serve: 'Servizio', set: 'Alzata', switch: 'Cambio', pass: 'Ricezione', attack: 'Attacco' },
         tutorial: [
           'Tutorial',
           'Avanti',
-          'Questo è un giocatore.\nSi seleziona con un clic.\nS=Schiacciatore, C=Centrale,\n P=Palleggiatore, O=Opposto',
+          'Questo è un giocatore.\nSi seleziona con un clic.\nS=Schiacciatore, C=Centrale,\n P=Palleggiatore, O=Opposton\nL=Libero',
           'Questo è in campo con tutti e\n 6 i giocatori.\nAl clic sui bottoni, i giocatori\n si muoveranno intorno al campo',
           'Questo ti permette di scegliere\nla formazione di partenza.\nIl clic sul cerchio cambia la rotazione.\nOgni rotazione è etichettata con la\nposizione dell\'alzatore (P)',
           'Questo mostra la situazione in cui\nla squadra è al servizio',
@@ -99,13 +99,13 @@ class VBTutorialServeReceieve extends VBTutorial {
         ]
       },
       'fr': {
-        players: { s: 'Pa', o: 'Po', m1: 'C1', m2: 'C2', h1: 'A1', h2: 'A2'},
+        players: { s: 'Pa', o: 'Po', m2: 'C2', m1: 'C1', h1: 'A1', h2: 'A2', l: 'L'},
         rotationControl: { serving: 'Service', receiving: 'Récevoir', s1: 'Passeur a 1', s2: 'Passeur a 2', s3: 'Passeur a 3', s4: 'Passeur a 4', s5: 'Passeur a 5', s6: 'Passeur a 6' },
-        actionControl: { base: 'Base', serve: 'Service', set: 'Passe', switch: 'Switch', pass: 'Récevoir', attack: 'Attaque' },
+        actionControl: { servingBase: 'Base', serve: 'Service', set: 'Passe', switch: 'Switch', pass: 'Récevoir', attack: 'Attaque' },
         tutorial: [
           'Tutorial',
           'Next',
-          'This is a player. Click to highlight it.\n\nA=Attaquant, C=Central,\nPa=Passeur, Po=Pointu',
+          'This is a player. Click to highlight it.\n\nA=Attaquant, C=Central,\nPa=Passeur, Po=Pointu\nL=Libero',
           'This is the court, with all 6 players.\nAs you click the buttons, the players\n will move round the court',
           'This lets you select the rotations.\nClick the circle to change rotation.\nEach one is labelled with the\nsetter\'s position',
           'These are for when you are serving',
@@ -117,13 +117,13 @@ class VBTutorialServeReceieve extends VBTutorial {
         ]
       },
       'pl': {
-        players: { s: 'R', o: 'A', m1: 'S1', m2: 'S2', h1: 'P1', h2: 'P2'},
+        players: { s: 'R', o: 'A', m2: 'S2', m1: 'S1', h1: 'P1', h2: 'P2', l: 'L'},
         rotationControl: { serving: 'Serwis', receiving: 'Przyjęcie', s1: 'Rozgrywający \nna pozycji nr 1', s2: 'Rozgrywający \nna pozycji nr 2', s3: 'Rozgrywający \nna pozycji nr 3', s4: 'Rozgrywający \nna pozycji nr 4', s5: 'Rozgrywający \nna pozycji nr 5', s6: 'Rozgrywający \nna pozycji nr 6' },
-        actionControl: { base: 'Ustawienie\npoczątkowe', serve: 'Serwis', set: 'Rozegranie', switch: 'Przejście', pass: 'Przyjęcie', attack: 'Atak' },
+        actionControl: { servingBase: 'Ustawienie\npoczątkowe', serve: 'Serwis', set: 'Rozegranie', switch: 'Przejście', pass: 'Przyjęcie', attack: 'Atak' },
         tutorial: [
           'Samouczek',
           'Następny',
-          'This is a player. Click to highlight it.\n\nP=Przyjmujący, S=Środkowy,\nR=Rozgrywający, A=Atakujący',
+          'This is a player. Click to highlight it.\n\nP=Przyjmujący, S=Środkowy,\nR=Rozgrywający, A=Atakujący\nL=Libero',
           'To jest boisko ze wszystkimi\nsześcioma graczami. Klikając w\nprzyciski sprawisz,że zawodnicy\nbędą poruszać się po boisku',
           'Tutaj możesz wybrać rotacje.\nNaciśnij na kółko, żeby zmienić\nrotację. nKażda jest oznaczona\nz pozycją rozgrywającego',
           'To są rotacje gdy serwujesz',
@@ -135,13 +135,13 @@ class VBTutorialServeReceieve extends VBTutorial {
         ]
       },
       'nl': {
-        players: { s: 'S', o: 'O', m1: 'M1', m2: 'M2', h1: 'H1', h2: 'H2'},
+        players: { s: 'S', o: 'O', m2: 'M2', m1: 'M1', h1: 'H1', h2: 'H2', l: 'L'},
         rotationControl: { serving: 'Serving', receiving: 'Receiving', s1: 'Setter at 1', s2: 'Setter at 2', s3: 'Setter at 3', s4: 'Setter at 4', s5: 'Setter at 5', s6: 'Setter at 6' },
-        actionControl: { base: 'Base', serve: 'Serve', set: 'Set', switch: 'Switch', pass: 'Pass', attack: 'Attack' },
+        actionControl: { servingBase: 'Base', serve: 'Serve', set: 'Set', switch: 'Switch', pass: 'Pass', attack: 'Attack' },
         tutorial: [
           'Tutorial',
           'Next',
-          'This is a player. Click to highlight it.\n\nH=Hitter, M=Middle, S=Setter, \nO=Opposite',
+          'This is a player. Click to highlight it.\n\nH=Hitter, M=Middle, S=Setter, \nO=Opposite, L=Libero',
           'This is the court, with all 6 players.\nAs you click the buttons, the players\n will move round the court',
           'This lets you select the rotations.\nClick the circle to change rotation.\nEach one is labelled with the\nsetter\'s position',
           'These are for when you are serving',
@@ -153,9 +153,9 @@ class VBTutorialServeReceieve extends VBTutorial {
         ]
       },
       'de': {
-        players: { s: 'S', o: 'O', m1: 'M1', m2: 'M2', h1: 'H1', h2: 'H2'},
+        players: { s: 'S', o: 'O', m2: 'M2', m1: 'M1', h1: 'H1', h2: 'H2', l: 'L'},
         rotationControl: { serving: 'Serving', receiving: 'Receiving', s1: 'Setter at 1', s2: 'Setter at 2', s3: 'Setter at 3', s4: 'Setter at 4', s5: 'Setter at 5', s6: 'Setter at 6' },
-        actionControl: { base: 'Base', serve: 'Serve', set: 'Set', switch: 'Switch', pass: 'Pass', attack: 'Attack' },
+        actionControl: { servingBase: 'Base', serve: 'Serve', set: 'Set', switch: 'Switch', pass: 'Pass', attack: 'Attack' },
         tutorial: [
           'Tutorial',
           'Next',
@@ -171,13 +171,13 @@ class VBTutorialServeReceieve extends VBTutorial {
         ]
       },
       'es': {
-        players: { s: 'Co', o: 'O', m1: 'C1', m2: 'C2', h1: 'A1', h2: 'A2'},
+        players: { s: 'Co', o: 'O', m2: 'C2', m1: 'C1', h1: 'A1', h2: 'A2', l: 'L'},
         rotationControl: { serving: 'Servicio', receiving: 'Recepción', s1: 'Colocadora\nen 1', s2: 'Colocadora\n en 2', s3: 'Colocadora\nen 3', s4: 'Colocadora\nen 4', s5: 'Colocadora\nen 5', s6: 'Colocadora\nen 6' },
-        actionControl: { base: 'Base', serve: 'Servicio', set: 'Set', switch: 'Cambiar', pass: 'Pass', attack: 'Ataque' },
+        actionControl: { servingBase: 'Base', serve: 'Servicio', set: 'Set', switch: 'Cambiar', pass: 'Pass', attack: 'Ataque' },
         tutorial: [
           'Tutorial',
           'Next',
-          'This is a player. Click to highlight it.\n\nA=Atacante, C#=Central,\nCo=Colocadora,O=Opuesta',
+          'This is a player. Click to highlight it.\n\nA=Atacante, C1/C2=Central,\nCo=Colocadora, O=Opuesta\nL=Libero',
           'This is the court, with all 6 players.\nAs you click the buttons, the players\n will move round the court',
           'This lets you select the rotations.\nClick the circle to change rotation.\nEach one is labelled with the\nsetter\'s position',
           'These are for when you are serving',
@@ -204,7 +204,7 @@ class VBTutorialServeReceieve extends VBTutorial {
           left:   700 * this.svg.scale,
           right:  1320 * this.svg.scale,
           top:    700 * this.svg.scale,
-          bottom: 900 * this.svg.scale,
+          bottom: 920 * this.svg.scale,
         },
         text: this.text[this.language].tutorial[2],
         nextPosition: {
@@ -369,368 +369,468 @@ class VBTutorialServeReceieve extends VBTutorial {
     this.court = new VBHalfCourt({
       width: (11/17) * this.svg.width
     })
-    console .log(`drawing court ${(11/17) * this.svg.width} wide`)
+
     this.svg.snapRoot.append(this.court.getSVG())
+    this.court.getSVG().setAttribute('transform', 't100,0')
 
     this.playerPositions = {
-      base: {
+      servingBase: {
         1: {
           s:  { x: 700, y: 600 },
           h1: { x: 700, y: 100 },
-          m1: { x: 450, y: 100 },
+          m2: { x: 450, y: 100 },
           o:  { x: 200, y: 100 },
           h2: { x: 200, y: 600 },
-          m2: { x: 450, y: 700 }
+          l: { x: 450, y: 700 },
+          m1:  { x: -64, y: 700 }
         },
         2: {
-          m2: { x: 700, y: 600 },
+          m1: { x: 700, y: 600 },
           s:  { x: 700, y: 100 },
           h1: { x: 450, y: 100 },
-          m1: { x: 200, y: 100 },
+          m2: { x: 200, y: 100 },
           o:  { x: 200, y: 600 },
-          h2: { x: 450, y: 700 }
+          h2: { x: 450, y: 700 },
+          l:  { x: -64, y: 700 }
         },
         3: {
           h2: { x: 700, y: 600 },
-          m2: { x: 700, y: 100 },
+          m1: { x: 700, y: 100 },
           s:  { x: 450, y: 100 },
           h1: { x: 200, y: 100 },
-          m1: { x: 200, y: 600 },
-          o:  { x: 450, y: 700 }
+          l: { x: 200, y: 600 },
+          o:  { x: 450, y: 700 },
+          m2:  { x: -64, y: 700 }
         },
         4: {
           o:  { x: 700, y: 600 },
           h2: { x: 700, y: 100 },
-          m2: { x: 450, y: 100 },
+          m1: { x: 450, y: 100 },
           s:  { x: 200, y: 100 },
           h1: { x: 200, y: 600 },
-          m1: { x: 450, y: 700 }
+          l: { x: 450, y: 700 },
+          m2:  { x: -64, y: 700 }
         },
         5: {
-          m1: { x: 700, y: 600 },
+          m2: { x: 700, y: 600 },
           o:  { x: 700, y: 100 },
           h2: { x: 450, y: 100 },
-          m2: { x: 200, y: 100 },
+          m1: { x: 200, y: 100 },
           s:  { x: 200, y: 600 },
-          h1: { x: 450, y: 700 }
+          h1: { x: 450, y: 700 },
+          l:  { x: -64, y: 700 }
         },
         6: {
           h1: { x: 700, y: 600 },
-          m1: { x: 700, y: 100 },
+          m2: { x: 700, y: 100 },
           o:  { x: 450, y: 100 },
           h2: { x: 200, y: 100 },
-          m2: { x: 200, y: 600 },
-          s:  { x: 450, y: 700 }
+          l: { x: 200, y: 600 },
+          s:  { x: 450, y: 700 },
+          m1:  { x: -64, y: 700 }
         }
       },
-      serveServe: {
+      servingServe: {
         1: {
           s:  { x: 700, y: 940 },
           h1: { x: 580, y: 100 },
-          m1: { x: 450, y: 100 },
+          m2: { x: 450, y: 100 },
           o:  { x: 320, y: 100 },
           h2: { x: 200, y: 600 },
-          m2: { x: 450, y: 700 }
+          l: { x: 450, y: 700 },
+          m1:  { x: -64, y: 700 }
         },
         2: {
-          m2: { x: 700, y: 940 },
+          m1: { x: 700, y: 940 },
           s:  { x: 580, y: 100 },
           h1: { x: 450, y: 100 },
-          m1: { x: 320, y: 100 },
+          m2: { x: 320, y: 100 },
           o:  { x: 200, y: 600 },
-          h2: { x: 450, y: 700 }
+          h2: { x: 450, y: 700 },
+          l:  { x: -64, y: 700 }
         },
         3: {
           h2: { x: 700, y: 940 },
-          m2: { x: 580, y: 100 },
+          m1: { x: 580, y: 100 },
           s:  { x: 450, y: 100 },
           h1: { x: 320, y: 100 },
-          m1: { x: 200, y: 600 },
-          o:  { x: 450, y: 700 }
+          l: { x: 200, y: 600 },
+          o:  { x: 450, y: 700 },
+          m2:  { x: -64, y: 700 }
         },
         4: {
           o:  { x: 700, y: 940 },
           h2: { x: 580, y: 100 },
-          m2: { x: 450, y: 100 },
+          m1: { x: 450, y: 100 },
           s:  { x: 320, y: 100 },
           h1: { x: 200, y: 600 },
-          m1: { x: 450, y: 700 }
+          l: { x: 450, y: 700 },
+          m2:  { x: -64, y: 700 }
         },
         5: {
-          m1: { x: 700, y: 940 },
+          m2: { x: 700, y: 940 },
           o:  { x: 580, y: 100 },
           h2: { x: 450, y: 100 },
-          m2: { x: 320, y: 100 },
+          m1: { x: 320, y: 100 },
           s:  { x: 200, y: 600 },
-          h1: { x: 450, y: 700 }
+          h1: { x: 450, y: 700 },
+          l:  { x: -64, y: 700 }
         },
         6: {
           h1: { x: 700, y: 940 },
-          m1: { x: 580, y: 100 },
+          m2: { x: 580, y: 100 },
           o:  { x: 450, y: 100 },
           h2: { x: 320, y: 100 },
-          m2: { x: 200, y: 600 },
-          s:  { x: 450, y: 700 }
+          l: { x: 200, y: 600 },
+          s:  { x: 450, y: 700 },
+          m1:  { x: -64, y: 700 }
         }
       },
-      switchServe: {
+      servingSwitch: {
         1: {
           s:  { x: 700, y: 600 },
           h1: { x: 200, y: 100 },
-          m1: { x: 450, y: 100 },
+          m2: { x: 450, y: 100 },
           o:  { x: 700, y: 100 },
           h2: { x: 450, y: 700 },
-          m2: { x: 200, y: 600 }
+          l: { x: 200, y: 600 },
+          m1:  { x: -64, y: 700 }
         },
         2: {
-          m2: { x: 200, y: 600 },
+          m1: { x: 200, y: 600 },
           s:  { x: 700, y: 100 },
           h1: { x: 200, y: 100 },
-          m1: { x: 450, y: 100 },
+          m2: { x: 450, y: 100 },
           o:  { x: 700, y: 600 },
-          h2: { x: 450, y: 700 }
+          h2: { x: 450, y: 700 },
+          l:  { x: -64, y: 700 }
         },
         3: {
           h2: { x: 450, y: 700 },
-          m2: { x: 450, y: 100 },
+          m1: { x: 450, y: 100 },
           s:  { x: 700, y: 100 },
           h1: { x: 200, y: 100 },
-          m1: { x: 200, y: 600 },
-          o:  { x: 700, y: 600 }
+          l: { x: 200, y: 600 },
+          o:  { x: 700, y: 600 },
+          m2:  { x: -64, y: 700 }
         },
         4: {
           o:  { x: 700, y: 600 },
           h2: { x: 200, y: 100 },
-          m2: { x: 450, y: 100 },
+          m1: { x: 450, y: 100 },
           s:  { x: 700, y: 100 },
           h1: { x: 450, y: 700 },
-          m1: { x: 200, y: 600 }
+          l: { x: 200, y: 600 },
+          m2:  { x: -64, y: 700 }
         },
         5: {
-          m1: { x: 200, y: 600 },
+          m2: { x: 200, y: 600 },
           o:  { x: 700, y: 100 },
           h2: { x: 200, y: 100 },
-          m2: { x: 450, y: 100 },
+          m1: { x: 450, y: 100 },
           s:  { x: 700, y: 600 },
-          h1: { x: 450, y: 700 }
+          h1: { x: 450, y: 700 },
+          l:  { x: -64, y: 700 }
         },
         6: {
           h1: { x: 450, y: 700 },
-          m1: { x: 450, y: 100 },
+          m2: { x: 450, y: 100 },
           o:  { x: 700, y: 100 },
           h2: { x: 200, y: 100 },
-          m2: { x: 200, y: 600 },
-          s:  { x: 700, y: 600 }
+          l: { x: 200, y: 600 },
+          s:  { x: 700, y: 600 },
+          m1:  { x: -64, y: 700 }
         }
       },
-      switchReceive: {
+      receivingBase: {
         1: {
           s:  { x: 700, y: 600 },
           h1: { x: 700, y: 100 },
-          m1: { x: 450, y: 100 },
+          m2: { x: 450, y: 100 },
           o:  { x: 200, y: 100 },
-          h2: { x: 450, y: 700 },
-          m2: { x: 200, y: 600 }
+          h2: { x: 200, y: 600 },
+          l:  { x: 450, y: 700 },
+          m1: { x: -64, y: 700 }
         },
         2: {
-          m2: { x: 200, y: 600 },
+          l:  { x: 700, y: 600 },
           s:  { x: 700, y: 100 },
-          h1: { x: 200, y: 100 },
-          m1: { x: 450, y: 100 },
-          o:  { x: 700, y: 600 },
-          h2: { x: 450, y: 700 }
-        },
-        3: {
-          h2: { x: 450, y: 700 },
-          m2: { x: 450, y: 100 },
-          s:  { x: 700, y: 100 },
-          h1: { x: 200, y: 100 },
-          m1: { x: 200, y: 600 },
-          o:  { x: 700, y: 600 }
-        },
-        4: {
-          o:  { x: 700, y: 600 },
-          h2: { x: 200, y: 100 },
-          m2: { x: 450, y: 100 },
-          s:  { x: 700, y: 100 },
-          h1: { x: 450, y: 700 },
-          m1: { x: 200, y: 600 }
-        },
-        5: {
-          m1: { x: 200, y: 600 },
-          o:  { x: 700, y: 100 },
-          h2: { x: 200, y: 100 },
-          m2: { x: 450, y: 100 },
-          s:  { x: 700, y: 600 },
-          h1: { x: 450, y: 700 }
-        },
-        6: {
-          h1: { x: 450, y: 700 },
-          m1: { x: 450, y: 100 },
-          o:  { x: 700, y: 100 },
-          h2: { x: 200, y: 100 },
-          m2: { x: 200, y: 600 },
-          s:  { x: 700, y: 600 }
-        }
-      },
-      receiveReceive: {
-        1: {
-          s:  { x: 800, y: 170 },
-          h1: { x: 840, y: 60 },
-          m1: { x: 760, y: 280 },
+          h1: { x: 450, y: 100 },
+          m2: { x: 200, y: 100 },
           o:  { x: 200, y: 600 },
           h2: { x: 450, y: 700 },
-          m2: { x: 700, y: 600 }
-        },
-        2: {
-          m2: { x: 700, y: 600 },
-          s:  { x: 700, y: 100 },
-          h1: { x: 200, y: 600 },
-          m1: { x: 40, y: 160 },
-          o:  { x: 260, y: 840 },
-          h2: { x: 450, y: 700 }
+          m1: { x: -64, y: 700 }
         },
         3: {
           h2: { x: 700, y: 600 },
-          m2: { x: 740, y: 140 },
+          m1: { x: 700, y: 100 },
+          s:  { x: 450, y: 100 },
+          h1: { x: 200, y: 100 },
+          l:  { x: 200, y: 600 },
+          o:  { x: 450, y: 700 },
+          m2: { x: -64, y: 700 }
+        },
+        4: {
+          o:  { x: 700, y: 600 },
+          h2: { x: 700, y: 100 },
+          m1: { x: 450, y: 100 },
+          s:  { x: 200, y: 100 },
+          h1: { x: 200, y: 600 },
+          l:  { x: 450, y: 700 },
+          m2: { x: -64, y: 700 }
+        },
+        5: {
+          l:  { x: 700, y: 600 },
+          o:  { x: 700, y: 100 },
+          h2: { x: 450, y: 100 },
+          m1: { x: 200, y: 100 },
+          s:  { x: 200, y: 600 },
+          h1: { x: 450, y: 700 },
+          m2: { x: -64, y: 700 }
+        },
+        6: {
+          h1: { x: 700, y: 600 },
+          m2: { x: 700, y: 100 },
+          o:  { x: 450, y: 100 },
+          h2: { x: 200, y: 100 },
+          l:  { x: 200, y: 600 },
+          s:  { x: 450, y: 700 },
+          m1: { x: -64, y: 700 }
+        }
+      },
+      receivingPass: {
+        1: {
+          s:  { x: 840, y: 700 },
+          h1: { x: 700, y: 600 },
+          m2: { x: 150, y: 60  },
+          o:  { x: 54,  y: 100 },
+          h2: { x: 200, y: 600 },
+          l:  { x: 450, y: 700 },
+          m1: { x: -64, y: 700 }
+        },
+        2: {
+          l: { x: 700, y: 600 },
+          s:  { x: 700, y: 100 },
+          h1: { x: 200, y: 600 },
+          m2:  { x: 40, y: 160 },
+          o:  { x: 260, y: 840 },
+          h2: { x: 450, y: 700 },
+          m1: { x: -64, y: 700 }
+        },
+        3: {
+          h2: { x: 700, y: 600 },
+          m1: { x: 740, y: 140 },
           s:  { x: 600, y: 100 },
           h1: { x: 200, y: 600 },
-          m1: { x: 450, y: 700 },
-          o:  { x: 560, y: 820 }
+          l:  { x: 450, y: 700 },
+          o:  { x: 560, y: 820 },
+          m2: { x: -64, y: 700 }
         },
         4: {
           o:  { x: 760, y: 820 },
           h2: { x: 200, y: 600 },
-          m2: { x: 140, y: 140 },
+          m1: { x: 140, y: 140 },
           s:  { x: 60, y: 60 },
           h1: { x: 450, y: 700 },
-          m1: { x: 700, y: 600 }
+          l:  { x: 700, y: 600 },
+          m2: { x: -64, y: 700 }
         },
         5: {
-          m1: { x: 700, y: 600 },
+          l: { x: 700, y: 600 },
           o:  { x: 840, y: 100 },
           h2: { x: 200, y: 600 },
-          m2: { x: 60, y: 60 },
-          s:  { x: 240, y: 140 },
-          h1: { x: 450, y: 700 }
+          m1:  { x: 60, y: 60 },
+          s:  { x: 350, y: 140 },
+          h1: { x: 450, y: 700 },
+          m2: { x: -64, y: 700 }
         },
         6: {
           h1: { x: 700, y: 600 },
-          m1: { x: 700, y: 140 },
+          m2: { x: 700, y: 140 },
           o:  { x: 560, y: 60 },
           h2: { x: 200, y: 600 },
-          m2: { x: 450, y: 700 },
-          s:  { x: 510, y: 170 }
+          l:  { x: 450, y: 700 },
+          s:  { x: 510, y: 170 },
+          m1: { x: -64, y: 700 }
         }
       },
-      receiveSet: {
+      receivingSet: {
         1: {
           s:  { x: 600, y: 100 },
           h1: { x: 900, y: 300 },
-          m1: { x: 450, y: 300 },
+          m2: { x: 450, y: 300 },
           o:  { x: 0,   y: 300 },
-          h2: { x: 450, y: 700 },
-          m2: { x: 700, y: 600 }
+          h2: { x: 450, y: 600 },
+          l:  { x: 400, y: 700 },
+          m1: { x: -64, y: 700 }
         },
         2: {
-          m2: { x: 700, y: 600 },
+          l: { x: 700, y: 600 },
           s:  { x: 600, y: 100 },
           h1: { x: 0,   y: 300 },
-          m1: { x: 450, y: 300 },
-          o:  { x: 200, y: 600 },
-          h2: { x: 450, y: 700 }
+          m2:  { x: 450, y: 300 },
+          o:  { x: 850, y: 600 },
+          h2: { x: 430, y: 600 },
+          m1: { x: -64, y: 700 }
         },
         3: {
-          h2: { x: 700, y: 600 },
-          m2: { x: 450, y: 300 },
+          h2: { x: 450, y: 600 },
+          m1: { x: 450, y: 300 },
           s:  { x: 600, y: 100 },
           h1: { x: 0,   y: 300 },
-          m1: { x: 450, y: 700 },
-          o:  { x: 560, y: 820 }
+          l:  { x: 400, y: 700 },
+          o:  { x: 850, y: 600 },
+          m2: { x: -64, y: 700 }
         },
         4: {
-          o:  { x: 760, y: 820 },
+          o:  { x: 850, y: 600 },
           h2: { x: 0,   y: 300 },
-          m2: { x: 450, y: 300 },
+          m1: { x: 450, y: 300 },
           s:  { x: 600, y: 100 },
           h1: { x: 450, y: 700 },
-          m1: { x: 700, y: 600 }
+          l:  { x: 700, y: 600 },
+          m2: { x: -64, y: 700 }
         },
         5: {
-          m1: { x: 700, y: 600 },
+          l: { x: 700, y: 600 },
           o:  { x: 900, y: 300 },
           h2: { x: 0,   y: 300 },
-          m2: { x: 450, y: 300 },
+          m1:  { x: 450, y: 300 },
           s:  { x: 600, y: 100 },
-          h1: { x: 450, y: 700 }
+          h1: { x: 450, y: 600 },
+          m2: { x: -64, y: 700 }
         },
         6: {
-          h1: { x: 700, y: 600 },
-          m1: { x: 450, y: 300 },
+          h1: { x: 450, y: 600 },
+          m2: { x: 450, y: 300 },
           o:  { x: 900, y: 300 },
           h2: { x: 0,   y: 300 },
-          m2: { x: 450, y: 700 },
-          s:  { x: 600, y: 100 }
+          l:  { x: 400, y: 700 },
+          s:  { x: 600, y: 100 },
+          m1: { x: -64, y: 700 }
         }
       },
-      receiveHit: {
-          1: {
-            s:  { x: 600, y: 100 },
-            h1: { x: 800, y: 100 },
-            m1: { x: 450, y: 100 },
-            o:  { x: 100, y: 100 },
-            h2: { x: 450, y: 700 },
-            m2: { x: 700, y: 600 }
-          },
-          2: {
-            m2: { x: 700, y: 600 },
-            s:  { x: 600, y: 100 },
-            h1: { x: 100, y: 100 },
-            m1: { x: 450, y: 100 },
-            o:  { x: 200, y: 600 },
-            h2: { x: 450, y: 700 }
-          },
-          3: {
-            h2: { x: 700, y: 600 },
-            m2: { x: 450, y: 100 },
-            s:  { x: 600, y: 100 },
-            h1: { x: 100, y: 100 },
-            m1: { x: 450, y: 700 },
-            o:  { x: 560, y: 820 }
-          },
-          4: {
-            o:  { x: 760, y: 820 },
-            h2: { x: 100, y: 100 },
-            m2: { x: 450, y: 100 },
-            s:  { x: 600, y: 100 },
-            h1: { x: 450, y: 700 },
-            m1: { x: 700, y: 600 }
-          },
-          5: {
-            m1: { x: 700, y: 600 },
-            o:  { x: 800, y: 100 },
-            h2: { x: 100, y: 100 },
-            m2: { x: 450, y: 100 },
-            s:  { x: 600, y: 100 },
-            h1: { x: 450, y: 700 }
-          },
-          6: {
-            h1: { x: 700, y: 600 },
-            m1: { x: 450, y: 100 },
-            o:  { x: 800, y: 100 },
-            h2: { x: 100, y: 100 },
-            m2: { x: 450, y: 700 },
-            s:  { x: 600, y: 100 }
-          }
+      receivingAttack: {
+        1: {
+          s:  { x: 600, y: 100 },
+          h1: { x: 800, y: 100 },
+          m2: { x: 450, y: 100 },
+          o:  { x: 100, y: 100 },
+          h2: { x: 450, y: 300 },
+          l:  { x: 400, y: 700 },
+          m1: { x: -64, y: 700 }
         },
+        2: {
+          l: { x: 700, y: 600 },
+          s:  { x: 600, y: 100 },
+          h1: { x: 100, y: 100 },
+          m2:  { x: 450, y: 100 },
+          o:  { x: 840, y: 300 },
+          h2: { x: 440, y: 300 },
+          m1: { x: -64, y: 700 }
+        },
+        3: {
+          h2: { x: 450, y: 300 },
+          m1: { x: 450, y: 100 },
+          s:  { x: 600, y: 100 },
+          h1: { x: 100, y: 100 },
+          l:  { x: 450, y: 700 },
+          o:  { x: 840, y: 300 },
+          m2: { x: -64, y: 700 }
+        },
+        4: {
+          o:  { x: 840, y: 300 },
+          h2: { x: 100, y: 100 },
+          m1: { x: 450, y: 100 },
+          s:  { x: 600, y: 100 },
+          h1: { x: 450, y: 700 },
+          l:  { x: 700, y: 600 },
+          m2: { x: -64, y: 700 }
+        },
+        5: {
+          l: { x: 700, y: 600 },
+          o:  { x: 800, y: 100 },
+          h2: { x: 100, y: 100 },
+          m1:  { x: 450, y: 100 },
+          s:  { x: 600, y: 100 },
+          h1: { x: 450, y: 300 },
+          m2: { x: -64, y: 700 }
+        },
+        6: {
+          h1: { x: 450, y: 300 },
+          m2: { x: 450, y: 100 },
+          o:  { x: 800, y: 100 },
+          h2: { x: 100, y: 100 },
+          l:  { x: 400, y: 700 },
+          s:  { x: 600, y: 100 },
+          m1: { x: -64, y: 700 }
+        }
+      },
+      receivingSwitch: {
+        1: {
+          s:  { x: 700, y: 600 },
+          h1: { x: 700, y: 100 },
+          m2: { x: 450, y: 100 },
+          o:  { x: 200, y: 100 },
+          h2: { x: 450, y: 700 },
+          l:  { x: 200, y: 600 },
+          m1: { x: -64, y: 700 }
+        },
+        2: {
+          l: { x: 200, y: 600 },
+          s:  { x: 700, y: 100 },
+          h1: { x: 200, y: 100 },
+          m2:  { x: 450, y: 100 },
+          o:  { x: 700, y: 600 },
+          h2: { x: 450, y: 700 },
+          m1: { x: -64, y: 700 }
+        },
+        3: {
+          h2: { x: 450, y: 700 },
+          m1: { x: 450, y: 100 },
+          s:  { x: 700, y: 100 },
+          h1: { x: 200, y: 100 },
+          l:  { x: 200, y: 600 },
+          o:  { x: 700, y: 600 },
+          m2: { x: -64, y: 700 }
+        },
+        4: {
+          o:  { x: 700, y: 600 },
+          h2: { x: 200, y: 100 },
+          m1: { x: 450, y: 100 },
+          s:  { x: 700, y: 100 },
+          h1: { x: 450, y: 700 },
+          l:  { x: 200, y: 600 },
+          m2: { x: -64, y: 700 }
+        },
+        5: {
+          l: { x: 200, y: 600 },
+          o:  { x: 700, y: 100 },
+          h2: { x: 200, y: 100 },
+          m1:  { x: 450, y: 100 },
+          s:  { x: 700, y: 600 },
+          h1: { x: 450, y: 700 },
+          m2: { x: -64, y: 700 }
+        },
+        6: {
+          h1: { x: 450, y: 700 },
+          m2: { x: 450, y: 100 },
+          o:  { x: 700, y: 100 },
+          h2: { x: 200, y: 100 },
+          l:  { x: 200, y: 600 },
+          s:  { x: 700, y: 600 },
+          m1: { x: -64, y: 700 }
+        }
+      },
     }
     this.players = {
-      s: this.court.addPlayer(this.playerPositions.base[2].s.x, this.playerPositions.base[2].s.y, this.text[this.language].players.s),
-      h1: this.court.addPlayer(this.playerPositions.base[2].h1.x, this.playerPositions.base[2].h1.y, this.text[this.language].players.h1),
-      m2: this.court.addPlayer(this.playerPositions.base[2].m2.x, this.playerPositions.base[2].m2.y, this.text[this.language].players.m2),
-      o: this.court.addPlayer(this.playerPositions.base[2].o.x, this.playerPositions.base[2].o.y, this.text[this.language].players.o),
-      h2: this.court.addPlayer(this.playerPositions.base[2].h2.x, this.playerPositions.base[2].h2.y, this.text[this.language].players.h2),
-      m1: this.court.addPlayer(this.playerPositions.base[2].m1.x, this.playerPositions.base[2].m1.y, this.text[this.language].players.m1)
+      s: this.court.addPlayer(this.playerPositions.servingBase[2].s.x, this.playerPositions.servingBase[2].s.y, this.text[this.language].players.s),
+      h1: this.court.addPlayer(this.playerPositions.servingBase[2].h1.x, this.playerPositions.servingBase[2].h1.y, this.text[this.language].players.h1),
+      m1: this.court.addPlayer(this.playerPositions.servingBase[2].m1.x, this.playerPositions.servingBase[2].m1.y, this.text[this.language].players.m1),
+      o: this.court.addPlayer(this.playerPositions.servingBase[2].o.x, this.playerPositions.servingBase[2].o.y, this.text[this.language].players.o),
+      h2: this.court.addPlayer(this.playerPositions.servingBase[2].h2.x, this.playerPositions.servingBase[2].h2.y, this.text[this.language].players.h2),
+      m2: this.court.addPlayer(this.playerPositions.servingBase[2].m2.x, this.playerPositions.servingBase[2].m2.y, this.text[this.language].players.m2),
+      l: this.court.addPlayer(this.playerPositions.servingBase[2].l.x, this.playerPositions.servingBase[2].l.y, this.text[this.language].players.l)
     }
 
     this.state = {
@@ -1012,18 +1112,18 @@ class VBTutorialServeReceieve extends VBTutorial {
     const controlCircles = this.svg.snapRoot.group(this.controlOneSrv, this.controlTwoSrv, this.controlThreeSrv, this.controlFourSrv, this.controlFiveSrv, this.controlSixSrv,
         this.controlOneRcv, this.controlTwoRcv, this.controlThreeRcv, this.controlFourRcv, this.controlFiveRcv, this.controlSixRcv)
 
-    this.controlTwoRcv.click(() => {this.state.setterAt = 2;if (!this.state.moving) {this.controlSelect(this.state.setterAt, false, this.controlReceiveBase);  this.move(this.playerPositions.base[this.state.setterAt], 600).then(() => this.state.moving = false)}})
-    this.controlTwoSrv.click(() => {this.state.setterAt = 2;if (!this.state.moving) {this.controlSelect(this.state.setterAt, true, this.controlServeBase); this.move(this.playerPositions.base[this.state.setterAt], 600).then(() => this.state.moving = false)}})
-    this.controlOneRcv.click(() => {this.state.setterAt = 1;if (!this.state.moving) {this.controlSelect(this.state.setterAt, false, this.controlReceiveBase);  this.move(this.playerPositions.base[this.state.setterAt], 600).then(() => this.state.moving = false)}})
-    this.controlOneSrv.click(() => {this.state.setterAt = 1;if (!this.state.moving) {this.controlSelect(this.state.setterAt, true, this.controlServeBase); this.move(this.playerPositions.base[this.state.setterAt], 600).then(() => this.state.moving = false)}})
-    this.controlSixRcv.click(() => {this.state.setterAt = 6;if (!this.state.moving) {this.controlSelect(this.state.setterAt, false, this.controlReceiveBase);  this.move(this.playerPositions.base[this.state.setterAt], 600).then(() => this.state.moving = false)}})
-    this.controlSixSrv.click(() => {this.state.setterAt = 6;if (!this.state.moving) {this.controlSelect(this.state.setterAt, true, this.controlServeBase); this.move(this.playerPositions.base[this.state.setterAt], 600).then(() => this.state.moving = false)}})
-    this.controlFiveRcv.click(() => {this.state.setterAt = 5;if (!this.state.moving) {this.controlSelect(this.state.setterAt, false, this.controlReceiveBase); this.move(this.playerPositions.base[this.state.setterAt], 600).then(() => this.state.moving = false)}})
-    this.controlFiveSrv.click(() => {this.state.setterAt = 5;if (!this.state.moving) {this.controlSelect(this.state.setterAt, true, this.controlServeBase); this.move(this.playerPositions.base[this.state.setterAt], 600).then(() => this.state.moving = false)}})
-    this.controlFourRcv.click(() => {this.state.setterAt = 4;if (!this.state.moving) {this.controlSelect(this.state.setterAt, false, this.controlReceiveBase); this.move(this.playerPositions.base[this.state.setterAt], 600).then(() => this.state.moving = false)}})
-    this.controlFourSrv.click(() => {this.state.setterAt = 4;if (!this.state.moving) {this.controlSelect(this.state.setterAt, true, this.controlServeBase); this.move(this.playerPositions.base[this.state.setterAt], 600).then(() => this.state.moving = false)}})
-    this.controlThreeRcv.click(() => {this.state.setterAt = 3;if (!this.state.moving) {this.controlSelect(this.state.setterAt, false, this.controlReceiveBase); this.move(this.playerPositions.base[this.state.setterAt], 600).then(() => this.state.moving = false)}})
-    this.controlThreeSrv.click(() => {this.state.setterAt = 3;if (!this.state.moving) {this.controlSelect(this.state.setterAt, true, this.controlServeBase); this.move(this.playerPositions.base[this.state.setterAt], 600).then(() => this.state.moving = false)}})
+    this.controlTwoRcv.click(() => {this.state.setterAt = 2;if (!this.state.moving) {this.controlSelect(this.state.setterAt, false, this.controlReceiveBase);  this.move(this.playerPositions.receivingBase[this.state.setterAt], 600).then(() => this.state.moving = false)}})
+    this.controlTwoSrv.click(() => {this.state.setterAt = 2;if (!this.state.moving) {this.controlSelect(this.state.setterAt, true, this.controlServeBase); this.move(this.playerPositions.servingBase[this.state.setterAt], 600).then(() => this.state.moving = false)}})
+    this.controlOneRcv.click(() => {this.state.setterAt = 1;if (!this.state.moving) {this.controlSelect(this.state.setterAt, false, this.controlReceiveBase);  this.move(this.playerPositions.receivingBase[this.state.setterAt], 600).then(() => this.state.moving = false)}})
+    this.controlOneSrv.click(() => {this.state.setterAt = 1;if (!this.state.moving) {this.controlSelect(this.state.setterAt, true, this.controlServeBase); this.move(this.playerPositions.servingBase[this.state.setterAt], 600).then(() => this.state.moving = false)}})
+    this.controlSixRcv.click(() => {this.state.setterAt = 6;if (!this.state.moving) {this.controlSelect(this.state.setterAt, false, this.controlReceiveBase);  this.move(this.playerPositions.receivingBase[this.state.setterAt], 600).then(() => this.state.moving = false)}})
+    this.controlSixSrv.click(() => {this.state.setterAt = 6;if (!this.state.moving) {this.controlSelect(this.state.setterAt, true, this.controlServeBase); this.move(this.playerPositions.servingBase[this.state.setterAt], 600).then(() => this.state.moving = false)}})
+    this.controlFiveRcv.click(() => {this.state.setterAt = 5;if (!this.state.moving) {this.controlSelect(this.state.setterAt, false, this.controlReceiveBase); this.move(this.playerPositions.receivingBase[this.state.setterAt], 600).then(() => this.state.moving = false)}})
+    this.controlFiveSrv.click(() => {this.state.setterAt = 5;if (!this.state.moving) {this.controlSelect(this.state.setterAt, true, this.controlServeBase); this.move(this.playerPositions.servingBase[this.state.setterAt], 600).then(() => this.state.moving = false)}})
+    this.controlFourRcv.click(() => {this.state.setterAt = 4;if (!this.state.moving) {this.controlSelect(this.state.setterAt, false, this.controlReceiveBase); this.move(this.playerPositions.receivingBase[this.state.setterAt], 600).then(() => this.state.moving = false)}})
+    this.controlFourSrv.click(() => {this.state.setterAt = 4;if (!this.state.moving) {this.controlSelect(this.state.setterAt, true, this.controlServeBase); this.move(this.playerPositions.servingBase[this.state.setterAt], 600).then(() => this.state.moving = false)}})
+    this.controlThreeRcv.click(() => {this.state.setterAt = 3;if (!this.state.moving) {this.controlSelect(this.state.setterAt, false, this.controlReceiveBase); this.move(this.playerPositions.receivingBase[this.state.setterAt], 600).then(() => this.state.moving = false)}})
+    this.controlThreeSrv.click(() => {this.state.setterAt = 3;if (!this.state.moving) {this.controlSelect(this.state.setterAt, true, this.controlServeBase); this.move(this.playerPositions.servingBase[this.state.setterAt], 600).then(() => this.state.moving = false)}})
     this.rotationControls = this.svg.snapRoot.group(backgroundBoxes, headingLabels, rotationLabels, joinLines, setLines, controlCircles)
 
     this.rotationControls.transform(`t${1150 * this.svg.scale}, ${50 * this.svg.scale}`)
@@ -1155,7 +1255,7 @@ class VBTutorialServeReceieve extends VBTutorial {
     })
     const controlReceive = this.svg.snapRoot.group(this.controlReceiveBase, this.controlReceiveReceive, this.controlReceiveSet, this.controlReceiveHit, this.controlReceiveSwitch)
 
-    const textLabelS1 = this.multilineText(this.text[this.language].actionControl.base, 36, {
+    const textLabelS1 = this.multilineText(this.text[this.language].actionControl.servingBase, 36, {
       fill: this.colours.rotationControlColour,
       stroke: this.colours.rotationControlColour,
       strokeWidth: 2 * this.svg.scale,
@@ -1181,7 +1281,7 @@ class VBTutorialServeReceieve extends VBTutorial {
     })
     const textLabelS = this.svg.snapRoot.group(textLabelS1, textLabelS2, textLabelS3)
 
-    const textLabelR1 = this.multilineText(this.text[this.language].actionControl.base, 36, {
+    const textLabelR1 = this.multilineText(this.text[this.language].actionControl.servingBase, 36, {
       fill: this.colours.rotationControlColour,
       stroke: this.colours.rotationControlColour,
       strokeWidth: 2 * this.svg.scale,
@@ -1223,14 +1323,14 @@ class VBTutorialServeReceieve extends VBTutorial {
     })
     const textLabelR = this.svg.snapRoot.group(textLabelR1, textLabelR2, textLabelR3, textLabelR4, textLabelR5)
 
-    this.controlServeBase.click(() => {if (!this.state.moving) {this.controlSelect(this.state.setterAt, true, this.controlServeBase); this.move(this.playerPositions.base[this.state.setterAt], 600).then(() => this.state.moving = false)}})
-    this.controlServeServe.click(() => {if (!this.state.moving) {this.controlSelect(this.state.setterAt, true, this.controlServeServe); this.move(this.playerPositions.serveServe[this.state.setterAt], 600).then(() => this.state.moving = false)}})
-    this.controlServeSwitch.click(() => {if (!this.state.moving) {this.controlSelect(this.state.setterAt, true, this.controlServeSwitch); this.move(this.playerPositions.switchServe[this.state.setterAt], 600).then(() => this.state.moving = false)}})
-    this.controlReceiveBase.click(() => {if (!this.state.moving) {this.controlSelect(this.state.setterAt, false, this.controlReceiveBase); this.move(this.playerPositions.base[this.state.setterAt], 600).then(() => this.state.moving = false)}})
-    this.controlReceiveReceive.click(() => {if (!this.state.moving) {this.controlSelect(this.state.setterAt, false, this.controlReceiveReceive); this.move(this.playerPositions.receiveReceive[this.state.setterAt], 600).then(() => this.state.moving = false)}})
-    this.controlReceiveSet.click(() => {if (!this.state.moving) {this.controlSelect(this.state.setterAt, false, this.controlReceiveSet); this.move(this.playerPositions.receiveSet[this.state.setterAt], 600).then(() => this.state.moving = false)}})
-    this.controlReceiveHit.click(() => {if (!this.state.moving) {this.controlSelect(this.state.setterAt, false, this.controlReceiveHit); this.move(this.playerPositions.receiveHit[this.state.setterAt], 600).then(() => this.state.moving = false)}})
-    this.controlReceiveSwitch.click(() => {if (!this.state.moving) {this.controlSelect(this.state.setterAt, false, this.controlReceiveSwitch); this.move(this.playerPositions.switchReceive[this.state.setterAt], 600).then(() => this.state.moving = false)}})
+    this.controlServeBase.click(() => {if (!this.state.moving) {this.controlSelect(this.state.setterAt, true, this.controlServeBase); this.move(this.playerPositions.servingBase[this.state.setterAt], 600).then(() => this.state.moving = false)}})
+    this.controlServeServe.click(() => {if (!this.state.moving) {this.controlSelect(this.state.setterAt, true, this.controlServeServe); this.move(this.playerPositions.servingServe[this.state.setterAt], 600).then(() => this.state.moving = false)}})
+    this.controlServeSwitch.click(() => {if (!this.state.moving) {this.controlSelect(this.state.setterAt, true, this.controlServeSwitch); this.move(this.playerPositions.servingSwitch[this.state.setterAt], 600).then(() => this.state.moving = false)}})
+    this.controlReceiveBase.click(() => {if (!this.state.moving) {this.controlSelect(this.state.setterAt, false, this.controlReceiveBase); this.move(this.playerPositions.receivingBase[this.state.setterAt], 600).then(() => this.state.moving = false)}})
+    this.controlReceiveReceive.click(() => {if (!this.state.moving) {this.controlSelect(this.state.setterAt, false, this.controlReceiveReceive); this.move(this.playerPositions.receivingPass[this.state.setterAt], 600).then(() => this.state.moving = false)}})
+    this.controlReceiveSet.click(() => {if (!this.state.moving) {this.controlSelect(this.state.setterAt, false, this.controlReceiveSet); this.move(this.playerPositions.receivingSet[this.state.setterAt], 600).then(() => this.state.moving = false)}})
+    this.controlReceiveHit.click(() => {if (!this.state.moving) {this.controlSelect(this.state.setterAt, false, this.controlReceiveHit); this.move(this.playerPositions.receivingAttack[this.state.setterAt], 600).then(() => this.state.moving = false)}})
+    this.controlReceiveSwitch.click(() => {if (!this.state.moving) {this.controlSelect(this.state.setterAt, false, this.controlReceiveSwitch); this.move(this.playerPositions.receivingSwitch[this.state.setterAt], 600).then(() => this.state.moving = false)}})
 
     this.actionControls = this.svg.snapRoot.group(actionBoxes, links, headingLabels, controlServe, controlReceive, textLabelS, textLabelR)
 
@@ -1407,10 +1507,11 @@ class VBTutorialServeReceieve extends VBTutorial {
 
     this.players.s.setPosition(players.s.x, players.s.y)
     this.players.o.setPosition(players.o.x, players.o.y)
-    this.players.m1.setPosition(players.m1.x, players.m1.y)
     this.players.m2.setPosition(players.m2.x, players.m2.y)
+    this.players.m1.setPosition(players.m1.x, players.m1.y)
     this.players.h1.setPosition(players.h1.x, players.h1.y)
     this.players.h2.setPosition(players.h2.x, players.h2.y)
+    this.players.l.setPosition(players.l.x, players.l.y)
 
     return this.court.draw()
   }
