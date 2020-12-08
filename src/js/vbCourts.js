@@ -16,12 +16,12 @@ class VBCourt {
   /*
    * We have an internal coordinate system that defines one side of the court as 900 x 900 "units",
    * which simplifies creating the player position detail as being within that (0,0)-(900,900) box.
-   * We then have a border of 100 units, which means that the diagram is 1100 units wide, with:
-   * - a half-court drawn from (100,100) top-left to (1000,1000) bottom-right, total height 1100 units
-   * - a full-court drawn from (100,100) top-left to (1000,1900) bottom-right, total height 2000 units
+   * We then have a border of 120 units, which means that the diagram is 1140 units wide, with:
+   * - a half-court drawn from (120,120) top-left to (1040,1040) bottom-right, total height 1140 units
+   * - a full-court drawn from (120,120) top-left to (1040,1940) bottom-right, total height 2040 units
    *
-   * There is therefore a scaling factor of {image-width} / 1100, with a default image width of 600px.
-   * The half court has a height equal to the width, and the full court has a height 20/11 * the width.
+   * There is therefore a scaling factor of {image-width} / 1140, with a default image width of 600px.
+   * The half court has a height equal to the width, and the full court has a height 2040/1140 * the width.
    *
    * We could use a transformation, but I'd rather have the final SVG to be "clean"
    */
@@ -31,7 +31,7 @@ class VBCourt {
     this.svg = {
       width: svgWidth,
       height: svgWidth,
-      scale: svgWidth / 1100,
+      scale: svgWidth / 1140,
     }
 
     this.colours = {
@@ -97,33 +97,33 @@ class VBHalfCourt extends VBCourt {
     background.attr({
       fill: this.colours.backgroundColour,
     })
-    const outerLines = this.svg.snapRoot.rect(100 * this.svg.scale, 100 * this.svg.scale, 900 * this.svg.scale, 900 * this.svg.scale)
+    const outerLines = this.svg.snapRoot.rect(120 * this.svg.scale, 120 * this.svg.scale, 900 * this.svg.scale, 900 * this.svg.scale)
     outerLines.attr({
       fill: this.colours.courtColour,
       stroke: this.colours.lineColour,
       strokeWidth: 8 * this.svg.scale,
     })
-    const centreLine = this.svg.snapRoot.line(30 * this.svg.scale, 100 * this.svg.scale, 1070 * this.svg.scale, 100 * this.svg.scale)
+    const centreLine = this.svg.snapRoot.line(50 * this.svg.scale, 120 * this.svg.scale, 1090 * this.svg.scale, 120 * this.svg.scale)
     centreLine.attr({
       stroke: this.colours.lineColour,
       strokeWidth: 8 * this.svg.scale,
     })
-    const attackLine = this.svg.snapRoot.line(100 * this.svg.scale, 400 * this.svg.scale, 1000 * this.svg.scale, 400 * this.svg.scale)
+    const attackLine = this.svg.snapRoot.line(120 * this.svg.scale, 400 * this.svg.scale, 1020 * this.svg.scale, 400 * this.svg.scale)
     attackLine.attr({
       stroke: this.colours.lineColour,
       strokeWidth: 8 * this.svg.scale,
     })
-    const leftTicks = this.svg.snapRoot.line(20 * this.svg.scale, 400 * this.svg.scale, 100 * this.svg.scale, 400 * this.svg.scale)
+    const leftTicks = this.svg.snapRoot.line(20 * this.svg.scale, 400 * this.svg.scale, 120 * this.svg.scale, 400 * this.svg.scale)
     leftTicks.attr({
       stroke: this.colours.lineColour,
       strokeWidth: 8 * this.svg.scale,
-      'stroke-dasharray': (16 * this.svg.scale) + ', ' + (16 * this.svg.scale)
+      'stroke-dasharray': (20 * this.svg.scale) + ', ' + (16 * this.svg.scale)
     })
-    const rightTicks = this.svg.snapRoot.line(1000 * this.svg.scale, 400 * this.svg.scale, 1080 * this.svg.scale, 400 * this.svg.scale)
+    const rightTicks = this.svg.snapRoot.line(1120 * this.svg.scale, 400 * this.svg.scale, 1020 * this.svg.scale, 400 * this.svg.scale)
     rightTicks.attr({
       stroke: this.colours.lineColour,
       strokeWidth: 8 * this.svg.scale,
-      'stroke-dasharray': (16 * this.svg.scale) + ', ' + (16 * this.svg.scale),
+      'stroke-dasharray': (20 * this.svg.scale) + ', ' + (16 * this.svg.scale),
     })
   }
 }
@@ -134,7 +134,7 @@ class VBFullCourt extends VBCourt {
    */
   constructor (config) {
     super(config)
-    this.svg.height = this.svg.width * (20/11)
+    this.svg.height = this.svg.width * (204/114)
     this.svg.svgRoot = document.createElementNS(this.NS, 'svg')
     this.svg.svgRoot.setAttribute('width', this.svg.width)
     this.svg.svgRoot.setAttribute('height', this.svg.height)
@@ -150,50 +150,50 @@ class VBFullCourt extends VBCourt {
     background.attr({
       fill: this.colours.backgroundColour,
     })
-    const outerLines = this.svg.snapRoot.rect(100 * this.svg.scale, 100 * this.svg.scale, 900 * this.svg.scale, 1800 * this.svg.scale)
+    const outerLines = this.svg.snapRoot.rect(120 * this.svg.scale, 120 * this.svg.scale, 900 * this.svg.scale, 1800 * this.svg.scale)
     outerLines.attr({
       fill: this.colours.courtColour,
       stroke: this.colours.lineColour,
       strokeWidth: 8 * this.svg.scale,
     })
-    const centreLine = this.svg.snapRoot.line(30 * this.svg.scale, 1000 * this.svg.scale, 1070 * this.svg.scale, 1000 * this.svg.scale)
+    const centreLine = this.svg.snapRoot.line(50 * this.svg.scale, 1020 * this.svg.scale, 1070 * this.svg.scale, 1020 * this.svg.scale)
     centreLine.attr({
       stroke: this.colours.lineColour,
       strokeWidth: 8 * this.svg.scale,
     })
-    const attackLine1 = this.svg.snapRoot.line(100 * this.svg.scale, 700 * this.svg.scale, 1000 * this.svg.scale, 700 * this.svg.scale)
+    const attackLine1 = this.svg.snapRoot.line(120 * this.svg.scale, 720 * this.svg.scale, 1020 * this.svg.scale, 720 * this.svg.scale)
     attackLine1.attr({
       stroke: this.colours.lineColour,
       strokeWidth: 8 * this.svg.scale,
     })
-    const attackLine2 = this.svg.snapRoot.line(100 * this.svg.scale, 1300 * this.svg.scale, 1000 * this.svg.scale, 1300 * this.svg.scale)
+    const attackLine2 = this.svg.snapRoot.line(120 * this.svg.scale, 1320 * this.svg.scale, 1020 * this.svg.scale, 1320 * this.svg.scale)
     attackLine2.attr({
       stroke: this.colours.lineColour,
       strokeWidth: 8 * this.svg.scale,
     })
-    const leftTicks1 = this.svg.snapRoot.line(20 * this.svg.scale, 700 * this.svg.scale, 100 * this.svg.scale, 700 * this.svg.scale)
+    const leftTicks1 = this.svg.snapRoot.line(20 * this.svg.scale, 720 * this.svg.scale, 120 * this.svg.scale, 720 * this.svg.scale)
     leftTicks1.attr({
       stroke: this.colours.lineColour,
       strokeWidth: 8 * this.svg.scale,
-      'stroke-dasharray': (16 * this.svg.scale) + ', ' + (16 * this.svg.scale)
+      'stroke-dasharray': (16 * this.svg.scale) + ', ' + (15 * this.svg.scale)
     })
-    const leftTicks2 = this.svg.snapRoot.line(20 * this.svg.scale, 1300 * this.svg.scale, 100 * this.svg.scale, 1300 * this.svg.scale)
+    const leftTicks2 = this.svg.snapRoot.line(20 * this.svg.scale, 1320 * this.svg.scale, 120 * this.svg.scale, 1320 * this.svg.scale)
     leftTicks2.attr({
       stroke: this.colours.lineColour,
       strokeWidth: 8 * this.svg.scale,
-      'stroke-dasharray': (16 * this.svg.scale) + ', ' + (16 * this.svg.scale)
+      'stroke-dasharray': (16 * this.svg.scale) + ', ' + (15 * this.svg.scale)
     })
-    const rightTicks1 = this.svg.snapRoot.line(1000 * this.svg.scale, 700 * this.svg.scale, 1180 * this.svg.scale, 700 * this.svg.scale)
+    const rightTicks1 = this.svg.snapRoot.line(1220 * this.svg.scale, 720 * this.svg.scale, 1020 * this.svg.scale, 720 * this.svg.scale)
     rightTicks1.attr({
       stroke: this.colours.lineColour,
       strokeWidth: 8 * this.svg.scale,
-      'stroke-dasharray': (18 * this.svg.scale) + ', ' + (18 * this.svg.scale),
+      'stroke-dasharray': (16 * this.svg.scale) + ', ' + (15 * this.svg.scale),
     })
-    const rightTicks2 = this.svg.snapRoot.line(1000 * this.svg.scale, 1300 * this.svg.scale, 1180 * this.svg.scale, 1300 * this.svg.scale)
+    const rightTicks2 = this.svg.snapRoot.line(1220 * this.svg.scale, 1320 * this.svg.scale, 1020 * this.svg.scale, 1320   * this.svg.scale)
     rightTicks2.attr({
       stroke: this.colours.lineColour,
       strokeWidth: 8 * this.svg.scale,
-      'stroke-dasharray': (18 * this.svg.scale) + ', ' + (18 * this.svg.scale),
+      'stroke-dasharray': (16 * this.svg.scale) + ', ' + (15 * this.svg.scale),
     })
   }
 }
@@ -210,11 +210,11 @@ class CourtObject {
   }
 
   setPosition (x, y) {
-    this.pos.x = (x + 100) * this.svg.scale
+    this.pos.x = (x + 120) * this.svg.scale
     if (this.pos.fullCourt) {
-      this.pos.y = (y + 1000) * this.svg.scale
+      this.pos.y = (y + 1020) * this.svg.scale
     } else {
-      this.pos.y = (y + 100) * this.svg.scale
+      this.pos.y = (y + 120) * this.svg.scale
     }
     this.movePending = true
   }
