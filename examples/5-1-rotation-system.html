@@ -34,8 +34,10 @@
       function pickLang (lang) {
         Object.keys(langDivs).forEach(langKey => {
           langDivs[langKey].style.borderBottom = 'none'
+          langDivs[langKey].style.borderTop = 'none'
         })
-        langDivs[lang].style.borderBottom = '2px solid #ffffff'
+        langDivs[lang].style.borderBottom = '2px solid #ccedff'
+        langDivs[lang].style.borderTop = '2px solid #ccedff'
         createVBTutorial(lang)
         changeDescription(lang)
       }
@@ -69,8 +71,9 @@
         }
         Object.keys(langDivs).forEach(langKey => {
           langDivs[langKey].style.borderBottom = 'none'
-          langDivs[langKey].style.paddingBottom = '3px'
-          langDivs[langKey].style.marginBottom = '1px'
+          langDivs[langKey].style.borderTop = 'none'
+          langDivs[langKey].style.paddingBottom = '2px'
+          langDivs[langKey].style.paddingTop = '2px'
           langDivs[langKey].style.display = 'inline-block'
         })
         pickLang(lang)
