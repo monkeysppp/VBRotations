@@ -245,10 +245,7 @@ _parameters_
 | --- | --- | --- | --- | --- |
 | `x`, `y` | number | optional | The x and y coordinates to move the `CourtObject` to.  This uses the same coordinate system as for `addPlayer()` (see above) | 0, 0 |
 
-_example_
-
-```js
-```
+_example_ - see example for `VBCourt.draw(time)`
 
 ---
 
