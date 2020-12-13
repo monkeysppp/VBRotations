@@ -198,7 +198,7 @@ class VBTutorialServeReceieve extends VBTutorial {
           left:   450 * this.svg.scale,
           right:  650 * this.svg.scale,
           top:    700 * this.svg.scale,
-          bottom: 900 * this.svg.scale,
+          bottom: 890 * this.svg.scale,
         },
         textPosition: {
           left:   700 * this.svg.scale,
@@ -214,10 +214,10 @@ class VBTutorialServeReceieve extends VBTutorial {
       },
       {
         boxPosition: {
-          left:   100 * this.svg.scale,
-          right:  1000 * this.svg.scale,
-          top:    100 * this.svg.scale,
-          bottom: 1000 * this.svg.scale,
+          left:   112 * this.svg.scale,
+          right:  988 * this.svg.scale,
+          top:    112 * this.svg.scale,
+          bottom: 986 * this.svg.scale,
         },
         textPosition: {
           left:   1050 * this.svg.scale,
@@ -234,7 +234,7 @@ class VBTutorialServeReceieve extends VBTutorial {
       {
         boxPosition: {
           left:   1150 * this.svg.scale,
-          right:  1700 * this.svg.scale,
+          right:  1690 * this.svg.scale,
           top:    50 * this.svg.scale,
           bottom: 1070 * this.svg.scale,
         },
