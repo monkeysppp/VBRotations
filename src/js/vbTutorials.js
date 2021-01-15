@@ -172,20 +172,20 @@ class VBTutorialServeReceieve extends VBTutorial {
       },
       'es': {
         players: { s: 'Co', o: 'O', m2: 'C2', m1: 'C1', h1: 'A1', h2: 'A2', l: 'L'},
-        rotationControl: { serving: 'Servicio', receiving: 'Recepción', s1: 'Colocadora\nen 1', s2: 'Colocadora\n en 2', s3: 'Colocadora\nen 3', s4: 'Colocadora\nen 4', s5: 'Colocadora\nen 5', s6: 'Colocadora\nen 6' },
-        actionControl: { servingBase: 'Base', serve: 'Servicio', set: 'Set', switch: 'Cambiar', pass: 'Pass', attack: 'Ataque' },
+        rotationControl: { serving: 'Servicio', receiving: 'Recepción', s1: 'Colocador\nen zona 1', s2: 'Colocador\nen zona 2', s3: 'Colocador\nen zona 3', s4: 'Colocador\nen zona 4', s5: 'Colocador\nen zona 5', s6: 'Colocador\nen zona 6' },
+        actionControl: { servingBase: 'Base', serve: 'Servicio', set: 'Colocación', switch: 'Cambio', pass: 'Pase', attack: 'Ataque' },
         tutorial: [
           'Tutorial',
-          'Next',
-          'This is a player. Click to highlight it.\n\nA=Atacante, C1/C2=Central,\nCo=Colocadora, O=Opuesta\nL=Libero',
-          'This is the court, with all 6 players.\nAs you click the buttons, the players\n will move round the court',
-          'This lets you select the rotations.\nClick the circle to change rotation.\nEach one is labelled with the\nsetter\'s position',
-          'These are for when you are serving',
-          'These are for when you are\nreceiving',
-          'Moving from circle to circle makes\n you rotate like in a match',
-          'This lets you select the phase of\n the rally.  The players will then\nmove around the court',
-          'These show the player positions\n when your side is serving',
-          'These show the player positions\n when your side is receiving',
+          'Siguiente',
+          'Esto es un jugador. Haga click para\nseleccionarlo\nA=Atacante, Ce=Central\nCo=Colocadora, O=Opuesta,\nL=Libero',
+          'Esta es la cancha de voleibol, con los\n6 jugadores. Los jugadores se\nmoverán sobre la cancha al hacer\nclic en los botones del diagrama',
+          'Seleccione un círculo para mostrar\nuna rotación. Cada rotación está\ndesignada por la posición del\ncolocador',
+          'Estos son para el servicio',
+          'Estos son para la recepción',
+          'Cambiar de un círculo al siguiente\nmuestra las rotaciones como en un\npartido',
+          'Seleccione la fase de la jugada para\nmover a los jugadores en la cancha',
+          'Estos mostrarán las posiciones de los\njugadores cuando su lado esté\nsirviendo',
+          'Estos mostrarán las posiciones de los\njugadores cuando su lado esté\nrecibiendo'
         ]
       }
     }

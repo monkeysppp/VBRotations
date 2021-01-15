@@ -39,10 +39,19 @@
         langDivs[lang].style.borderBottom = '2px solid #ccedff'
         langDivs[lang].style.borderTop = '2px solid #ccedff'
         createVBTutorial(lang)
-        changeDescription(lang)
+        changeLang(lang)
       }
 
-      function changeDescription (lang) {
+      function changeLang (lang) {
+        title = {
+          en: '5-1 Volleyball Rotation System',
+          fr: '5-1 Volleyball Rotation System',
+          de: '5-1 Volleyball Rotation System',
+          it: 'Sistema di Rotazione 5-1 della Pallavolo',
+          nl: '5-1 Volleybal Rotatie Systeem',
+          pl: 'Systemu Rotacji Siatkówki 5-1',
+          es: 'El Sistema de juego 5:1 Voleibol'
+        }
         desc = {
           en: 'The interactive diagram above can be used to demonstrate a typical 5-1 volleyball rotation system.  You can run the tutorial to show how the diagram works.',
           fr: 'The interactive diagram above can be used to demonstrate a typical 5-1 volleyball rotation system.  You can run the tutorial to show how the diagram works.',
@@ -50,9 +59,10 @@
           it: 'Il diagramma interattivo (sopra) indica il tipico sistema di rotazione 5-1 usato nella pallavolo. Puoi riprodurre il tutorial per vedere come funziona il diagramma.',
           nl: 'Het interactieve diagram hierboven kan gebruikt worden om een standaard 5-1 volleybal rotatie systeem te demonstreren. Door loop de instructies om te zien hoe het diagram werkt.',
           pl: 'Powyższy interaktywny diagram może posłużyć do zademonstrowania typowego systemu rotacji siatkówki 5-1. Możesz uruchomić samouczek, aby zobaczyć, jak działa diagram.',
-          es: 'The interactive diagram above can be used to demonstrate a typical 5-1 volleyball rotation system.  You can run the tutorial to show how the diagram works.'
+          es: 'Este diagrama interactivo demuestra el sistema de juego 5:1 en voleibol. Utilice el tutorial para saber cómo usar el diagrama.'
         }
         document.getElementById('descriptionP').innerHTML = desc[lang]
+        document.getElementById('titleH').innerHTML = title[lang]
       }
 
       window.onload = () => {
@@ -82,7 +92,7 @@
   </head>
   <body>
     <header class="site-header">
-      <h1>5-1 Volleyball Rotation System</h1>
+      <h1 id="titleH">5-1 Volleyball Rotation System</h1>
     </header>
     <section class="vbrotations">
       <div class="container" id="vbTutorialDiv"></div>
