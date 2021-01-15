@@ -334,7 +334,7 @@ Thanks to the following for their help with the translations:
 - [Maurizio Napolitano](https://github.com/napo), Giorgia Chiodin (Italiano)
 - Sławomir Bruszkowski (Polski)
 - Kri Muller (Nederlandse)
-- Ainhoa Larumbe (Españiol)
+- Ainhoa Larumbe (Español)
 
 ## License
 
