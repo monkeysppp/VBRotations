@@ -152,24 +152,6 @@ class VBTutorialServeReceieve extends VBTutorial {
           'Dit laat de positie van de spelers zien\nwanneer jouw kant ontvangt',
         ]
       },
-      'de': {
-        players: { s: 'S', o: 'O', m2: 'M2', m1: 'M1', h1: 'H1', h2: 'H2', l: 'L'},
-        rotationControl: { serving: 'Serving', receiving: 'Receiving', s1: 'Setter at 1', s2: 'Setter at 2', s3: 'Setter at 3', s4: 'Setter at 4', s5: 'Setter at 5', s6: 'Setter at 6' },
-        actionControl: { servingBase: 'Base', serve: 'Serve', set: 'Set', switch: 'Switch', pass: 'Pass', attack: 'Attack' },
-        tutorial: [
-          'Tutorial',
-          'Next',
-          'This is a player. Click to highlight it.\n\nH=Hitter, M=Middle, S=Setter,\nO=Opposite, L=Libero',
-          'This is the court, with all 6 players.\nAs you click the buttons, the players\n will move round the court',
-          'This lets you select the rotations.\nClick the circle to change rotation.\nEach one is labelled with the\nsetter\'s position',
-          'These are for when you are serving',
-          'These are for when you are\nreceiving',
-          'Moving from circle to circle makes\n you rotate like in a match',
-          'This lets you select the phase of\n the rally.  The players will then\nmove around the court',
-          'These show the player positions\n when your side is serving',
-          'These show the player positions\n when your side is receiving',
-        ]
-      },
       'es': {
         players: { s: 'Co', o: 'O', m2: 'C2', m1: 'C1', h1: 'A1', h2: 'A2', l: 'L'},
         rotationControl: { serving: 'Servicio', receiving: 'Recepción', s1: 'Colocador\nen zona 1', s2: 'Colocador\nen zona 2', s3: 'Colocador\nen zona 3', s4: 'Colocador\nen zona 4', s5: 'Colocador\nen zona 5', s6: 'Colocador\nen zona 6' },
