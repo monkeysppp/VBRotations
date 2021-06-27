@@ -169,7 +169,25 @@ class VBTutorialServeReceieve extends VBTutorial {
           'Estos mostrarán las posiciones de los\njugadores cuando su lado esté\nsirviendo',
           'Estos mostrarán las posiciones de los\njugadores cuando su lado esté\nrecibiendo'
         ]
-      }
+      },
+      'pt_br': {
+        players: { s: 'L', o: 'OP', m2: 'C2', m1: 'C1', h1: 'P1', h2: 'P2', l: 'Li'},
+        rotationControl: { serving: 'Sacando', receiving: 'Recebendo', s1: 'Levantador na 1', s2: 'Levantador na 2', s3: 'Levantador na 3', s4: 'Levantador na 4', s5: 'Levantador na 5', s6: 'Levantador na 6' },
+        actionControl: { servingBase: 'Base', serve: 'Saque', set: 'Levantamento', switch: 'Troca', pass: 'Passe', attack: 'Ataque' },
+        tutorial: [
+          'Tutorial',
+          'Próximo',
+          'Este é o jogador. Clique para destacá-lo.\n\nP=Ponta, C=Central, L=Levantador,\nOP=Oposto, Li=Libero',
+          'Esta é a quadra, com os 6 jogadores.\nClique nos botões, e os jogadores\n se moverão pela quadra.',
+          'Este quadro permite selecionar as\n rotações.Clique nos circulos para\n mudar a rotação.\n Eles estão marcadas pela posição doThese show the player positionsThese show the player positionsThese show the player positions\n levantador.',
+          'Estes são para quando você esta \nsacando',
+          'Estes são para quando você esta \n recebendo.',
+          'Mover de circulo a circulo faz\n você rotacionar como em um jogo.',
+          'Este painel permite que você\n selecione a fase do rally.\n Os jogadores moverão pela quadra.',
+          'Essas são as posições\n quando seu time está sacando.',
+          'Essas são as posições\n quando o seu time está recebendo.',
+        ]
+      },
     }
 
     this.language = (typeof config.language === 'string' && Object.keys(this.text).includes(config.language) ) ? config.language : 'en'
