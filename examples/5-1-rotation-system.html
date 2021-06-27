@@ -49,7 +49,8 @@
           it: 'Sistema di Rotazione 5-1 della Pallavolo',
           nl: '5-1 Volleybal Rotatie Systeem',
           pl: 'Systemu Rotacji Siatkówki 5-1',
-          es: 'El Sistema de juego 5:1 Voleibol'
+          es: 'El Sistema de juego 5:1 Voleibol',
+          pt_br: 'Sistema 5x1 de rotação no Voleibol'
         }
         desc = {
           en: 'The interactive diagram above can be used to demonstrate a typical 5-1 volleyball rotation system.  You can run the tutorial to show how the diagram works.',
@@ -57,7 +58,8 @@
           it: 'Il diagramma interattivo (sopra) indica il tipico sistema di rotazione 5-1 usato nella pallavolo. Puoi riprodurre il tutorial per vedere come funziona il diagramma.',
           nl: 'Het interactieve diagram hierboven kan gebruikt worden om een standaard 5-1 volleybal rotatie systeem te demonstreren. Door loop de instructies om te zien hoe het diagram werkt.',
           pl: 'Powyższy interaktywny diagram może posłużyć do zademonstrowania typowego systemu rotacji siatkówki 5-1. Możesz uruchomić samouczek, aby zobaczyć, jak działa diagram.',
-          es: 'Este diagrama interactivo demuestra el sistema de juego 5:1 en voleibol. Utilice el tutorial para saber cómo usar el diagrama.'
+          es: 'Este diagrama interactivo demuestra el sistema de juego 5:1 en voleibol. Utilice el tutorial para saber cómo usar el diagrama.',
+          pt_br: 'O diagrama interativo a cima pode ser usado para demonstrar um sistama 5x1 de rotação no Voleibol. Você pode abrir o tutorial para aprender como o diagrama funciona.'
         }
         document.getElementById('descriptionP').innerHTML = desc[lang]
         document.getElementById('titleH').innerHTML = title[lang]
@@ -74,7 +76,8 @@
           it: document.getElementById('lang-it'),
           nl: document.getElementById('lang-nl'),
           pl: document.getElementById('lang-pl'),
-          es: document.getElementById('lang-es')
+          es: document.getElementById('lang-es'),
+          pt_br: document.getElementById('lang-br')
         }
         Object.keys(langDivs).forEach(langKey => {
           langDivs[langKey].style.borderBottom = 'none'
@@ -100,6 +103,7 @@
         <div id="lang-nl"><img width="26px" src="../img/Netherlands.png" style="cursor: pointer;" title="Dutch - coming soon" onClick="pickLang('nl')"/></div>
         <div id="lang-pl"><img width="26px" src="../img/Poland.png" style="cursor: pointer;" title="Polski - coming soon" onClick="pickLang('pl')"/></div>
         <div id="lang-es"><img width="26px" src="../img/Spain.png" style="cursor: pointer;" title="Español - coming soon" onClick="pickLang('es')"/></div>
+        <div id="lang-br"><img width="26px" src="../img/Brazil.png" style="cursor: pointer;" title="Português Brasileiro" onClick="pickLang('pt_br')"/></div>
       </div>
     </section>
     <section class="notes">
