@@ -335,6 +335,7 @@ Thanks to the following for their help with the translations:
 - Sławomir Bruszkowski (Polski)
 - Kri Muller (Nederlandse)
 - Ainhoa Larumbe (Español)
+- [Vinicius J. F.](https://github.com/vini84200) (Brazilian Portuguese)
 
 ## License
 
